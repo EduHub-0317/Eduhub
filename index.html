@@ -3,1729 +3,670 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduHub - Learn Smart, Grow Faster | Free Study Resources for Students</title>
-<meta name="description" content="Free educational resources for school students. Study notes, worksheets, MCQ tests, question banks, previous year papers and downloadable PDFs.">
+
+<title>JAC Jharhub | Free Class 8 Study Resources, PYQs & Sample Papers</title>
+<meta name="description" content="Free JAC study resources for Class 8. Download previous year question papers, 2026 sample papers, chapter notes and etc . Jharkhand Academic Council board preparation made easy.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jharhub">
+<meta property="og:title" content="JAC Jharhub | Class 8 Free Study Resources">
+<meta property="og:description" content="Crack your JAC board exams with free previous year papers, sample papers and revision notes for Class 8 .">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+
+<meta name="google-site-verification" content="aqokXdlg9Mu65op1JmBT04ou6wRdg7qnbjd1fZpaJUI">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.8/index.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/plus-jakarta-sans@5.0.8/index.css">
-<meta name="google-site-verification" content="aqokXdlg9Mu65op1JmBT04ou6wRdg7qnbjd1fZpaJUI" />
-  <meta property="og:site_name" content="EduHub">
+
 <script>
-tailwind.config = {
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Plus Jakarta Sans', 'sans-serif']
-      },
-      colors: {
-        brand: {
-          50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
-          400: '#60a5fa', 500: '#2563EB', 600: '#1d4ed8', 700: '#1e40af', 800: '#1e3a8a', 900: '#172554'
+  document.documentElement.classList.add('js');
+
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+          display: ['Plus Jakarta Sans', 'sans-serif']
         },
-        success: {
-          50: '#ecfdf5', 100: '#d1fae5', 500: '#10B981', 600: '#059669', 700: '#047857'
+        colors: {
+          brand: {
+            50:'#eff6ff', 100:'#dbeafe', 200:'#bfdbfe', 300:'#93c5fd',
+            400:'#60a5fa', 500:'#2563EB', 600:'#1d4ed8', 700:'#1e40af',
+            800:'#1e3a8a', 900:'#172554'
+          },
+          mint: {
+            50:'#ecfdf5', 100:'#d1fae5', 200:'#a7f3d0',
+            500:'#10B981', 600:'#059669', 700:'#047857'
+          }
+        },
+        boxShadow: {
+          soft: '0 20px 50px -20px rgba(37,99,235,0.35)',
+          card: '0 10px 30px -12px rgba(15,23,42,0.12)'
         }
       }
     }
-  }
-}
+  };
 </script>
+
 <style>
-  * { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; color: #1f2937; }
-  .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
+  html { scroll-behavior: smooth; }
+  body { font-family:'Inter',sans-serif; color:#1f2937; }
+  .font-display { font-family:'Plus Jakarta Sans',sans-serif; }
 
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-  @keyframes slideIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
-  @keyframes pulse-soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
-  .animate-fadeUp { animation: fadeUp 0.5s ease-out forwards; }
-  .animate-slideIn { animation: slideIn 0.4s ease-out forwards; }
+  /* Sticky header ke neeche section proper position par aaye */
+  section[id] { scroll-margin-top: 90px; }
 
-  .card-hover { transition: all 0.25s ease; }
-  .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -10px rgba(37, 99, 235, 0.15); }
+  /* ---------- Cards ---------- */
+  .lift {
+    transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+  }
+  .lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 50px -18px rgba(37,99,235,.28);
+  }
+  .arrow-move { transition: transform .25s ease; }
+  .group:hover .arrow-move { transform: translateX(5px); }
 
-  .nav-link.active { color: #2563EB; font-weight: 600; }
-  .nav-link.active::after { content: ''; position: absolute; bottom: -6px; left: 0; right: 0; height: 2px; background: #2563EB; border-radius: 2px; }
-
-  .page { display: none; }
-  .page.active { display: block; animation: fadeUp 0.4s ease-out; }
-
-  /* Ad slot styling */
+  /* ---------- Ad slots ---------- */
   .ad-slot {
-    background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
-    border: 1px dashed #d1d5db;
-    display: flex; align-items: center; justify-content: center;
-    color: #9ca3af; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em;
-    position: relative; overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg,#f9fafb,#f3f4f6);
+    border:1px dashed #d1d5db;
+    color:#9ca3af; font-size:11px;
+    text-transform:uppercase; letter-spacing:.08em;
   }
   .ad-slot::before {
-    content: ''; position: absolute; inset: 0;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(209,217,229,0.3) 10px, rgba(209,217,229,0.3) 11px);
+    content:''; position:absolute; inset:0;
+    background-image:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(209,217,229,.28) 10px,rgba(209,217,229,.28) 11px);
   }
-  .ad-slot span { position: relative; z-index: 1; background: white; padding: 4px 12px; border-radius: 4px; border: 1px solid #e5e7eb; }
+  .ad-slot span {
+    position:relative; z-index:1;
+    background:#fff; padding:5px 14px;
+    border:1px solid #e5e7eb; border-radius:5px;
+  }
 
-  /* Custom scrollbar */
-  ::-webkit-scrollbar { width: 8px; height: 8px; }
-  ::-webkit-scrollbar-track { background: #f3f4f6; }
-  ::-webkit-scrollbar-thumb { background: #2563EB; border-radius: 4px; }
-  ::-webkit-scrollbar-thumb:hover { background: #1d4ed8; }
+  /* ---------- Scroll reveal (JS ke bina bhi content dikhega) ---------- */
+  .js .reveal { opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease; }
+  .js .reveal.is-visible { opacity:1; transform:none; }
 
-  .badge { display: inline-flex; align-items: center; padding: 2px 10px; border-radius: 9999px; font-size: 11px; font-weight: 600; }
+  /* ---------- FAQ ---------- */
+  details > summary { list-style:none; cursor:pointer; }
+  details > summary::-webkit-details-marker { display:none; }
+  details[open] .faq-icon { transform:rotate(180deg); }
+  .faq-icon { transition:transform .25s ease; }
+  details[open] .faq-body { animation:fadeIn .3s ease; }
 
-  .breadcrumb-sep::before { content: '/'; margin: 0 8px; color: #9ca3af; }
+  @keyframes fadeIn { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes floatSoft { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+  .float-soft { animation:floatSoft 7s ease-in-out infinite; }
 
-  /* Quiz styles */
-  .quiz-option { transition: all 0.2s ease; cursor: pointer; }
-  .quiz-option:hover { border-color: #2563EB; background: #eff6ff; }
-  .quiz-option.selected { border-color: #2563EB; background: #eff6ff; }
-  .quiz-option.correct { border-color: #10B981; background: #ecfdf5; }
-  .quiz-option.wrong { border-color: #ef4444; background: #fef2f2; }
+  /* ---------- Accessibility ---------- */
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline:3px solid #93c5fd; outline-offset:3px; border-radius:8px;
+  }
 
-  .chip { transition: all 0.15s ease; }
-  .chip:hover { background: #dbeafe; color: #1d4ed8; }
-  .chip.active { background: #2563EB; color: white; }
+  ::-webkit-scrollbar { width:8px; }
+  ::-webkit-scrollbar-track { background:#f3f4f6; }
+  ::-webkit-scrollbar-thumb { background:#2563EB; border-radius:4px; }
 
-  .search-highlight { background: #fef3c7; padding: 0 2px; border-radius: 2px; }
+  /* ---------- Mobile ---------- */
+  html, body { overflow-x:hidden; max-width:100%; }
+  *, *::before, *::after { box-sizing:border-box; }
 
-  @media (max-width: 768px) {
-    .hero-title { font-size: 2rem !important; }
+  @media (max-width:640px) {
+    .hero-title { font-size:2.15rem !important; line-height:1.2 !important; }
+    .container-x { padding-left:16px !important; padding-right:16px !important; }
+    .ad-slot { max-width:100%; }
   }
-/* ============== MOBILE RESPONSIVE FIXES ============== */
 
-/* Global overflow fix */
-html, body {
-  overflow-x: hidden !important;
-  max-width: 100vw !important;
-}
-
-* {
-  box-sizing: border-box !important;
-}
-
-@media (max-width: 640px) {
-  /* Container padding fix */
-  .max-w-7xl {
-    max-width: 100% !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+  @media (prefers-reduced-motion:reduce) {
+    html { scroll-behavior:auto; }
+    .js .reveal { opacity:1; transform:none; transition:none; }
+    .float-soft { animation:none; }
+    .lift:hover { transform:none; }
   }
-  
-  /* Hero title chhota karo */
-  .hero-title {
-    font-size: 1.75rem !important;
-    line-height: 1.3 !important;
-  }
-  
-  /* Search bar fix */
-  #heroSearch {
-    font-size: 14px !important;
-    padding: 12px 8px !important;
-  }
-  
-  .max-w-2xl {
-    max-width: 100% !important;
-    padding: 0 4px !important;
-  }
-  
-  .max-w-2xl button {
-    padding: 12px 16px !important;
-    font-size: 14px !important;
-    white-space: nowrap;
-  }
-  
-  /* Stats numbers */
-  .font-display.text-2xl,
-  .font-display.text-3xl {
-    font-size: 1.5rem !important;
-  }
-  
-  /* Class grid - 2 columns mobile par */
-  .grid-cols-3 {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 8px !important;
-  }
-  
-  .grid-cols-3 button {
-    font-size: 13px !important;
-    padding: 10px 4px !important;
-  }
-  
-  /* Newsletter fix */
-  .rounded-3xl {
-    border-radius: 1.5rem !important;
-    margin: 0 8px !important;
-    max-width: calc(100% - 16px) !important;
-  }
-  
-  /* Cards */
-  .card-hover {
-    max-width: 100% !important;
-  }
-  
-  /* Ad slots */
-  .ad-slot {
-    max-width: 100% !important;
-    overflow: hidden !important;
-  }
-  
-  /* Header icons */
-  header .flex.items-center.gap-2 {
-    gap: 8px !important;
-  }
-  
-  header button.p-2 {
-    padding: 8px !important;
-  }
-}
 </style>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+
+<!-- SEO: FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are these resources based on the latest JAC syllabus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All previous year papers, sample papers and notes are aligned with the latest Jharkhand Academic Council (JAC) syllabus for Class 8."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is all the study material really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, 100% free. No login, no subscription and no hidden charges. Every PDF on Jharhub can be downloaded directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I download a PDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open your class page (Class 8 ), find the resource and click Download. The PDF opens in a new tab where you can save it to your phone or computer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which classes and subjects are covered?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We cover JAC Class 8, including Mathematics, Science, Social Science, English, Hindi and Sanskrit."
+      }
+    }
+  ]
+}
+</script>
 </head>
-<body class="bg-white">
 
-<!-- Top Announcement Bar -->
-<div class="bg-brand-50 border-b border-brand-100 text-xs sm:text-sm">
-  <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
-    <div class="flex items-center gap-2 text-brand-700">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-      <span class="hidden sm:inline">New: Class 10 Board Exam 2026 Resources Now Available</span>
-      <span class="sm:hidden">New Resources Available!</span>
-    </div>
-    <div class="flex items-center gap-3 text-gray-600">
-      <a href="#" class="hover:text-brand-600 hidden sm:inline">Help</a>
-      <span class="hidden sm:inline">•</span>
-      <a href="#" class="hover:text-brand-600 hidden sm:inline">Sitemap</a>
-    </div>
-  </div>
-</div>
+<body class="bg-white antialiased">
 
-<!-- Header / Navigation -->
-<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-gray-100">
-  <div class="max-w-7xl mx-auto px-4">
-    <div class="flex items-center justify-between h-16">
-      
+<!-- =====================================================
+     2. HEADER / NAVIGATION
+===================================================== -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100">
+  <div class="max-w-7xl mx-auto container-x px-4">
+
+    <div class="flex items-center justify-between h-16 sm:h-18">
+
       <!-- Logo -->
-<a href="#" onclick="navigateTo('home'); return false;" class="flex items-center gap-1">
-  <img src="logo.png" alt="EduHub Logo" class="w-9 h-9 rounded-lg bg-white p-0.5 object-cover">
-  <div>
-    <div class="font-display font-bold text-xl text-gray-900 leading-none">EduHub</div>
-    <div class="text-[10px] text-gray-500 leading-none mt-0.5">Learn Smart, Grow Faster</div>
-  </div>
-</a>
-      <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-1">
-        <a href="#" onclick="navigateTo('home'); return false;" class="nav-link relative px-3 py-2 text-sm text-gray-700 hover:text-brand-600" data-page="home">Home</a>
-        <a href="#" onclick="navigateTo('categories'); return false;" class="nav-link relative px-3 py-2 text-sm text-gray-700 hover:text-brand-600" data-page="categories">Categories</a>
-        <a href="#" onclick="navigateTo('classwise'); return false;" class="nav-link relative px-3 py-2 text-sm text-gray-700 hover:text-brand-600" data-page="classwise">Class-wise</a>
-        <a href="#" onclick="navigateTo('subjects'); return false;" class="nav-link relative px-3 py-2 text-sm text-gray-700 hover:text-brand-600" data-page="subjects">Subjects</a>
-        
-        <div class="relative group">
-          <button class="nav-link relative px-3 py-2 text-sm text-gray-700 hover:text-brand-600 flex items-center gap-1">
-            Resources
-            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="absolute top-full left-0 mt-1 w-52 bg-white rounded-lg shadow-xl border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-            <a href="#" onclick="navigateTo('notes'); return false;" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600">📝 Previous Year Question</a>
-            <a href="#" onclick="navigateTo('worksheets'); return false;" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600">📋 Worksheet</a>
-            <a href="#" onclick="navigateTo('mcq'); return false;" class="block px-4 py-2 text-sm text-gray-700 hover:bg-brand-50 hover:text-brand-600">✅ MCQ Practice</a>
-          </div>
+      <a href="index.html" class="flex items-center gap-2.5 shrink-0">
+        <img src="logo.png" alt="Jharhub Logo" class="w-10 h-10 rounded-xl bg-white p-0.5 object-cover border border-gray-100">
+        <div>
+          <div class="font-display font-extrabold text-xl text-gray-900 leading-none">Jharhub</div>
+          <div class="text-[10px] text-gray-500 mt-1 leading-none">JAC Class 8 </div>
         </div>
-        <a href="#" onclick="navigateTo('blog'); return false;" class="nav-link relative px-3 py-2 text-sm text-gray-700 hover:text-brand-600" data-page="blog">Blog</a>
-        <a href="#" onclick="navigateTo('contact'); return false;" class="nav-link relative px-3 py-2 text-sm text-gray-700 hover:text-brand-600" data-page="contact">Contact</a>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1" aria-label="Main navigation">
+        <a href="index.html" class="px-3 py-2 text-sm font-semibold text-brand-600" aria-current="page">Home</a>
+        <a href="class-8.html" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-brand-600 transition">Class 8</a>
+        <a href="#faq" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-brand-600 transition">FAQ</a>
       </nav>
 
-      <!-- Right actions -->
-      <div class="flex items-center gap-2">
-        <button onclick="openSearch()" class="p-2 text-gray-600 hover:text-brand-600 hover:bg-brand-50 rounded-lg" title="Search">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        </button>
-        
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 text-gray-600 hover:bg-gray-100 rounded-lg" aria-label="Menu">
-          <svg id="menuIconOpen" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-          <svg id="menuIconClose" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
-        </button>
-      </div>
+      <!-- Desktop CTA -->
+      <a href="class-8.html" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-lg transition shadow-sm">
+        Board 2026 Kit
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"
+        class="md:hidden p-2.5 text-gray-700 hover:bg-gray-100 rounded-lg transition">
+        <svg id="iconOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="iconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
     </div>
 
-    <!-- Mobile Nav Menu -->
-    <div id="mobileMenu" class="hidden lg:hidden pb-4 border-t border-gray-100 pt-2">
-      <div class="flex flex-col gap-1">
-        <a href="#" onclick="navigateTo('home'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">🏠 Home</a>
-        <a href="#" onclick="navigateTo('categories'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">📂 Categories</a>
-        <a href="#" onclick="navigateTo('classwise'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">🎓 Class-wise</a>
-        <a href="#" onclick="navigateTo('subjects'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">📚 Subjects</a>
-        
-        <div class="border-t border-gray-100 my-1"></div>
-        <div class="px-3 py-1 text-[10px] uppercase tracking-wider text-gray-400 font-semibold">Resources</div>
-        
-        <a href="#" onclick="navigateTo('notes'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">📝 Previous Year Question</a>
-        <a href="#" onclick="navigateTo('worksheets'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">📋 Worksheets</a>
-        <a href="#" onclick="navigateTo('mcq'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">✅ MCQ Practice</a>
-                
-        <div class="border-t border-gray-100 my-1"></div>
-        
-        <a href="#" onclick="navigateTo('blog'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">📰 Blog</a>
-        <a href="#" onclick="navigateTo('contact'); closeMobileMenu(); return false;" class="px-3 py-2.5 text-sm text-gray-700 hover:bg-brand-50 rounded font-medium">📞 Contact</a>
-      </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden pb-4 pt-2 border-t border-gray-100">
+      <nav class="flex flex-col gap-1" aria-label="Mobile navigation">
+        <a href="index.html" class="px-3 py-3 rounded-lg bg-brand-50 text-brand-700 font-semibold text-sm">🏠 Home</a>
+        <a href="class-8.html" class="px-3 py-3 rounded-lg hover:bg-gray-50 text-gray-700 font-medium text-sm">📘 Class 8 Resources</a>
+        <a href="#faq" class="px-3 py-3 rounded-lg hover:bg-gray-50 text-gray-700 font-medium text-sm">❓ FAQ</a>
+      </nav>
     </div>
+
   </div>
 </header>
 
-<!-- Main Content Container -->
-<main id="mainContent">
 
-<!-- ============== HOME PAGE ============== -->
-<div id="page-home" class="page active">
+<main>
 
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-brand-50 via-white to-success-50 overflow-hidden">
-    <div class="absolute inset-0 opacity-40">
-      <div class="absolute top-10 left-10 w-72 h-72 bg-brand-200 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-10 right-10 w-96 h-96 bg-success-200 rounded-full blur-3xl"></div>
+<!-- =====================================================
+     3. HERO
+===================================================== -->
+<section class="relative overflow-hidden bg-gradient-to-br from-brand-50 via-white to-mint-50">
+
+  <!-- Soft background blobs -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-16 -left-16 w-80 h-80 bg-brand-200/40 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-24 -right-16 w-96 h-96 bg-mint-200/50 rounded-full blur-3xl"></div>
+    <div class="absolute top-20 right-1/4 w-40 h-40 bg-brand-100/60 rounded-full blur-2xl float-soft"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto container-x px-4 py-14 sm:py-20 lg:py-24">
+    <div class="max-w-3xl mx-auto text-center">
+
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-brand-100 rounded-full text-xs font-semibold text-brand-700 shadow-sm mb-6">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-mint-500 opacity-60"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-mint-500"></span>
+        </span>
+        JAC Board 2026 • Class 8
+      </div>
+
+      <h1 class="hero-title font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.12] mb-5">
+        Crack Your <span class="text-brand-500">JAC Board</span><br class="hidden sm:block">
+        Exams With Jharhub
+      </h1>
+
+      <p class="text-base sm:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto mb-8">
+        Previous year papers, latest sample papers and short revision notes for
+        <strong class="font-semibold text-gray-800">Jharkhand Academic Council Class 8 </strong>.
+        Completely free. No login needed.
+      </p>
+
+          <!-- Trust line -->
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-8 text-xs sm:text-sm text-gray-500">
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-mint-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          100% Free
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-mint-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          No Login Required
+        </span>
+        <span class="inline-flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-mint-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Updated for 2026
+        </span>
+      </div>
+
     </div>
-    <div class="relative max-w-7xl mx-auto px-4 py-12 sm:py-16 lg:py-20">
-      <div class="max-w-3xl mx-auto text-center">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border border-brand-100 rounded-full text-xs font-medium text-brand-700 mb-5 shadow-sm">
-          <span class="w-2 h-2 bg-success-500 rounded-full animate-pulse"></span>
-          Trusted by 2,50,000+ students across India
+  </div>
+</section>
+
+
+<!-- =====================================================
+     4. STATS STRIP
+===================================================== -->
+<section class="bg-white border-y border-gray-100">
+  <div class="max-w-7xl mx-auto container-x px-4 py-8 grid grid-cols-3 gap-4 sm:gap-8">
+    <div class="text-center">
+      <div class="font-display text-2xl sm:text-3xl font-extrabold text-brand-600">10+</div>
+      <div class="text-[11px] sm:text-sm text-gray-500 mt-1">Previous Year Papers</div>
+    </div>
+    <div class="text-center border-x border-gray-100">
+      <div class="font-display text-2xl sm:text-3xl font-extrabold text-brand-600">10+</div>
+      <div class="text-[11px] sm:text-sm text-gray-500 mt-1">Sample Papers</div>
+    </div>
+    <div class="text-center">
+      <div class="font-display text-2xl sm:text-3xl font-extrabold text-brand-600">2k+</div>
+      <div class="text-[11px] sm:text-sm text-gray-500 mt-1">Happy Students</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     5. AD — LEADERBOARD
+===================================================== -->
+<section class="max-w-7xl mx-auto container-x px-4 py-5">
+  <div class="ad-slot w-full h-20 sm:h-24 rounded-lg">
+    <span>Advertisement — 728 × 90</span>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     6. SELECT YOUR CLASS  (3 ALAG PAGES KI LINKS)
+===================================================== -->
+<section id="classes" class="max-w-7xl mx-auto container-x px-4 py-12 sm:py-16">
+
+  <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+    <div class="text-xs font-bold text-brand-600 uppercase tracking-[0.18em] mb-2">Start Your Preparation</div>
+    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Select Your Class</h2>
+    <p class="text-gray-600 text-sm sm:text-base">
+      Click your class to open the complete resource library — papers, notes and solutions, all in one place.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- ================= CLASS 8 ================= -->
+    <a href="class-8.html"
+      class="group lift reveal relative block bg-white border border-gray-200 rounded-2xl p-6 sm:p-7 overflow-hidden">
+
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-sky-400 to-blue-500"></div>
+
+      <div class="flex items-start justify-between mb-5">
+        <div class="w-14 h-14 rounded-xl bg-sky-50 flex items-center justify-center text-3xl">📘</div>
+        <span class="font-display text-6xl font-extrabold text-gray-100 leading-none select-none">08</span>
+      </div>
+
+      <div class="text-[11px] font-bold uppercase tracking-widest text-sky-600 mb-2">Build Your Foundation</div>
+      <h3 class="font-display text-2xl font-bold text-gray-900 mb-2">Class 8</h3>
+      <p class="text-sm text-gray-600 leading-relaxed mb-5">
+        Strong basics, strong scores. Chapter-wise notes and practice papers to build a solid foundation.
+      </p>
+
+      <div class="flex flex-wrap gap-1.5 mb-6">
+        <span class="text-[11px] px-2.5 py-1 bg-gray-50 border border-gray-100 rounded-md text-gray-600">Maths</span>
+        <span class="text-[11px] px-2.5 py-1 bg-gray-50 border border-gray-100 rounded-md text-gray-600">Science</span>
+        <span class="text-[11px] px-2.5 py-1 bg-gray-50 border border-gray-100 rounded-md text-gray-600">Social Science</span>
+        <span class="text-[11px] px-2.5 py-1 bg-gray-50 border border-gray-100 rounded-md text-gray-600">Hindi</span>
+        <span class="text-[11px] px-2.5 py-1 bg-gray-50 border border-gray-100 rounded-md text-gray-600">English</span>
+      </div>
+
+      <div class="flex items-center justify-between pt-5 border-t border-gray-100">
+        <span class="text-xs text-gray-500">PYQs · Samples · Notes</span>
+        <span class="inline-flex items-center gap-2 text-sm font-bold text-brand-600">
+          Explore
+          <svg class="w-4 h-4 arrow-move" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </span>
+      </div>
+    </a>
+
+<!-- =====================================================
+     7. AD — IN CONTENT
+===================================================== -->
+<section class="max-w-7xl mx-auto container-x px-4 py-4">
+  <div class="ad-slot w-full h-20 sm:h-24 rounded-lg">
+    <span>Advertisement — 728 × 90</span>
+  </div>
+</section>
+
+
+<!-- =====================================================
+     8. WHAT YOU GET
+===================================================== -->
+<section id="features" class="max-w-7xl mx-auto container-x px-4 py-12 sm:py-16">
+
+  <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8 reveal">
+    <div>
+      <div class="text-xs font-bold text-brand-600 uppercase tracking-[0.18em] mb-2">Everything In One Place</div>
+      <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-gray-900">What You'll Get</h2>
+    </div>
+    <a href="class-10.html" class="text-sm font-semibold text-brand-600 hover:text-brand-700 inline-flex items-center gap-1">
+      Browse resources
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+    <div class="reveal lift bg-white border border-gray-100 rounded-xl p-6">
+      <div class="w-11 h-11 rounded-lg bg-brand-50 flex items-center justify-center text-2xl mb-4">📘</div>
+      <h3 class="font-display font-bold text-gray-900 mb-2">Previous Year Papers</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">Solve the last 10 years of JAC question papers and understand exactly what repeats.</p>
+    </div>
+
+    <div class="reveal lift bg-white border border-gray-100 rounded-xl p-6" style="transition-delay:60ms">
+      <div class="w-11 h-11 rounded-lg bg-mint-50 flex items-center justify-center text-2xl mb-4">📄</div>
+      <h3 class="font-display font-bold text-gray-900 mb-2">2026 Sample Papers</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">Practice the latest sample papers with full marking schemes before your real exam.</p>
+    </div>
+
+    <div class="reveal lift bg-white border border-gray-100 rounded-xl p-6" style="transition-delay:120ms">
+      <div class="w-11 h-11 rounded-lg bg-purple-50 flex items-center justify-center text-2xl mb-4">📝</div>
+      <h3 class="font-display font-bold text-gray-900 mb-2">Chapter-wise Notes</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">Short, to-the-point revision notes for every chapter. Perfect for last-minute prep.</p>
+    </div>
+
+    <div class="reveal lift bg-white border border-gray-100 rounded-xl p-6" style="transition-delay:180ms">
+      <div class="w-11 h-11 rounded-lg bg-orange-50 flex items-center justify-center text-2xl mb-4">✅</div>
+      <h3 class="font-display font-bold text-gray-900 mb-2">Solutions &amp; Answers</h3>
+      <p class="text-sm text-gray-600 leading-relaxed">Step-by-step answers so you understand the method, not just the final result.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- =====================================================
+     10. FAQ
+===================================================== -->
+<section id="faq" class="max-w-7xl mx-auto container-x px-4 py-14 sm:py-20">
+  <div class="grid lg:grid-cols-[1fr_1.5fr] gap-10 lg:gap-16">
+
+    <!-- Left -->
+    <div class="reveal">
+      <div class="text-xs font-bold text-brand-600 uppercase tracking-[0.18em] mb-2">Good To Know</div>
+      <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-4">
+        Questions?<br>We've got answers.
+      </h2>
+      <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+        Everything you need to know about using Jharhub for your JAC board preparation.
+      </p>
+
+      <div class="bg-brand-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center gap-3 mb-2">
+          <div class="w-9 h-9 rounded-lg bg-white flex items-center justify-center text-xl">💬</div>
+          <h3 class="font-display font-bold text-gray-900 text-sm">Still need help?</h3>
         </div>
-        <h1 class="hero-title font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-5">
-          Learn Smart, <span class="text-brand-500">Grow Faster</span>
-        </h1>
-        <p class="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-          Free study notes, worksheets, MCQ tests, question banks and previous year papers for classes 1 to 10. Everything you need to ace your exams.
+        <p class="text-xs text-gray-600 leading-relaxed mb-3">
+          Can't find a chapter or paper? Pick your class and check the full resource list.
         </p>
-
-        <!-- Search Bar -->
-        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-2 max-w-2xl mx-auto">
-          <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-gray-400 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-            <input id="heroSearch" type="text" placeholder="Search notes, worksheets, MCQs..." class="flex-1 px-2 py-3 text-sm sm:text-base focus:outline-none" onkeypress="if(event.key==='Enter') performHeroSearch()">
-            <button onclick="performHeroSearch()" class="px-5 sm:px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl text-sm transition">Search</button>
-          </div>
-        </div>
-
-        <!-- Quick tags -->
-        <div class="flex flex-wrap justify-center gap-2 mt-5">
-          <span class="text-xs text-gray-500">Popular:</span>
-          <button onclick="quickSearch('Class 10 Math')" class="text-xs px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-brand-300 hover:text-brand-600">Class 10 Math</button>
-          <button onclick="quickSearch('Science NCERT')" class="text-xs px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-brand-300 hover:text-brand-600">Science NCERT</button>
-          <button onclick="quickSearch('Board Papers')" class="text-xs px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-brand-300 hover:text-brand-600">Board Papers</button>
-          <button onclick="quickSearch('English Grammar')" class="text-xs px-3 py-1 bg-white border border-gray-200 rounded-full hover:border-brand-300 hover:text-brand-600">English Grammar</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Strip -->
-  <section class="bg-white border-y border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
-      <div class="text-center">
-        <div class="font-display text-2xl sm:text-3xl font-bold text-brand-600">10,000+</div>
-        <div class="text-xs sm:text-sm text-gray-500 mt-1"> Previous Year Question</div>
-      </div>
-      <div class="text-center">
-        <div class="font-display text-2xl sm:text-3xl font-bold text-brand-600">5,000+</div>
-        <div class="text-xs sm:text-sm text-gray-500 mt-1">Worksheets</div>
-      </div>
-      <div class="text-center">
-        <div class="font-display text-2xl sm:text-3xl font-bold text-brand-600">50,000+</div>
-        <div class="text-xs sm:text-sm text-gray-500 mt-1">MCQ Questions</div>
-      </div>
-      <div class="text-center">
-        <div class="font-display text-2xl sm:text-3xl font-bold text-brand-600">2.5L+</div>
-        <div class="text-xs sm:text-sm text-gray-500 mt-1">Happy Students</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ad Slot: Leaderboard -->
-  <section class="max-w-7xl mx-auto px-4 py-4">
-    <div class="ad-slot w-full h-24 rounded-lg"><span>Advertisement — 728 × 90</span></div>
-  </section>
-
-  <!-- Featured Resources -->
-  <section class="max-w-7xl mx-auto px-4 py-10">
-    <div class="flex items-end justify-between mb-6">
-      <div>
-        <div class="text-xs font-semibold text-brand-600 uppercase tracking-wider mb-1">Featured</div>
-        <h2 class="font-display text-2xl sm:text-3xl font-bold text-gray-900">Top Learning Resources</h2>
-      </div>
-      <a href="#" onclick="navigateTo('notes'); return false;" class="text-sm text-brand-600 hover:text-brand-700 font-medium hidden sm:inline">View all →</a>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <!-- Featured cards -->
-      <div class="card-hover bg-white border border-gray-100 rounded-xl p-5 cursor-pointer" onclick="navigateTo('notes')">
-        <div class="flex items-center justify-between mb-3">
-          <div class="w-11 h-11 bg-brand-50 rounded-lg flex items-center justify-center text-xl">📘</div>
-          <span class="badge bg-success-50 text-success-700">Free</span>
-        </div>
-        <h3 class="font-semibold text-gray-900 mb-1">All Class PYQ</h3>
-        <p class="text-xs text-gray-500 mb-3">Previous year question for class 8,9and 10 </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>📄 124 pages</span>
-          <span>⬇ 12.4k</span>
-        </div>
-      </div>
-
-      <div class="card-hover bg-white border border-gray-100 rounded-xl p-5 cursor-pointer" onclick="navigateTo('worksheets')">
-        <div class="flex items-center justify-between mb-3">
-          <div class="w-11 h-11 bg-success-50 rounded-lg flex items-center justify-center text-xl">📝</div>
-          <span class="badge bg-brand-50 text-brand-700">PDF</span>
-        </div>
-        <h3 class="font-semibold text-gray-900 mb-1">Worksheets</h3>
-        <p class="text-xs text-gray-500 mb-3">Practice worksheets for All Class </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>📄 48 pages</span>
-          <span>⬇ 8.2k</span>
-        </div>
-      </div>
-
-      <div class="card-hover bg-white border border-gray-100 rounded-xl p-5 cursor-pointer" onclick="navigateTo('mcq')">
-        <div class="flex items-center justify-between mb-3">
-          <div class="w-11 h-11 bg-purple-50 rounded-lg flex items-center justify-center text-xl">✅</div>
-          <span class="badge bg-orange-50 text-orange-700">Test</span>
-        </div>
-        <h3 class="font-semibold text-gray-900 mb-1">MCQ Practice Tests</h3>
-        <p class="text-xs text-gray-500 mb-3">50,000+ MCQs for board exam preparation</p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>⏱ 30 min</span>
-          <span>👥 25k took</span>
-        </div>
-      </div>
-
-      <div class="card-hover bg-white border border-gray-100 rounded-xl p-5 cursor-pointer" onclick="navigateTo('classwise')">
-        <div class="flex items-center justify-between mb-3">
-          <div class="w-11 h-11 bg-pink-50 rounded-lg flex items-center justify-center text-xl">📚</div>
-          <span class="badge bg-red-50 text-red-700">Hot</span>
-        </div>
-        <h3 class="font-semibold text-gray-900 mb-1">Previous Year Papers</h3>
-        <p class="text-xs text-gray-500 mb-3">Last 10 years board exam papers with solutions</p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>📄 200+ papers</span>
-          <span>⬇ 45k</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Popular Categories -->
-  <section class="max-w-7xl mx-auto px-4 py-10">
-    <div class="flex items-end justify-between mb-6">
-      <div>
-        <div class="text-xs font-semibold text-brand-600 uppercase tracking-wider mb-1">Browse</div>
-        <h2 class="font-display text-2xl sm:text-3xl font-bold text-gray-900">Popular Categories</h2>
-      </div>
-      <a href="#" onclick="navigateTo('categories'); return false;" class="text-sm text-brand-600 hover:text-brand-700 font-medium hidden sm:inline">All categories →</a>
-    </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-      <button onclick="navigateTo('subjects')" class="card-hover bg-white border border-gray-100 rounded-xl p-4 text-center">
-        <div class="text-3xl mb-2">🔢</div>
-        <div class="font-semibold text-sm text-gray-900">Mathematics</div>
-         <div class="text-xs text-gray-500 mt-0.5">1,240 resources</div>
-      </button>
-      <button onclick="navigateTo('subjects')" class="card-hover bg-white border border-gray-100 rounded-xl p-4 text-center">
-        <div class="text-3xl mb-2">🔬</div>
-        <div class="font-semibold text-sm text-gray-900">Science</div>
-        <div class="text-xs text-gray-500 mt-0.5">1,580 resources</div>
-      </button>
-      <button onclick="navigateTo('subjects')" class="card-hover bg-white border border-gray-100 rounded-xl p-4 text-center">
-        <div class="text-3xl mb-2">📖</div>
-        <div class="font-semibold text-sm text-gray-900">English</div>
-        <div class="text-xs text-gray-500 mt-0.5">980 resources</div>
-      </button>
-      <button onclick="navigateTo('subjects')" class="card-hover bg-white border border-gray-100 rounded-xl p-4 text-center">
-        <div class="text-3xl mb-2">🌍</div>
-        <div class="font-semibold text-sm text-gray-900">Social Science</div>
-        <div class="text-xs text-gray-500 mt-0.5">1,120 resources</div>
-      </button>
-      <button onclick="navigateTo('subjects')" class="card-hover bg-white border border-gray-100 rounded-xl p-4 text-center">
-        <div class="text-3xl mb-2">💻</div>
-        <div class="font-semibold text-sm text-gray-900">Computer</div>
-        <div class="text-xs text-gray-500 mt-0.5">420 resources</div>
-      </button>
-      <button onclick="navigateTo('subjects')" class="card-hover bg-white border border-gray-100 rounded-xl p-4 text-center">
-        <div class="text-3xl mb-2">🎨</div>
-        <div class="font-semibold text-sm text-gray-900">Hindi</div>
-        <div class="text-xs text-gray-500 mt-0.5">760 resources</div>
-      </button>
-    </div>
-  </section>
-
-  <!-- Ad Slot: In-content -->
-  <section class="max-w-7xl mx-auto px-4 py-4">
-    <div class="ad-slot w-full h-24 rounded-lg"><span>Advertisement — 728 × 90</span></div>
-  </section>
-
-  <!-- Latest + Trending Grid -->
-  <section class="max-w-7xl mx-auto px-4 py-10">
-    <div class="grid lg:grid-cols-3 gap-8">
-      <!-- Latest uploaded -->
-      <div class="lg:col-span-2">
-        <div class="flex items-end justify-between mb-5">
-          <h2 class="font-display text-xl sm:text-2xl font-bold text-gray-900">Latest Uploaded</h2>
-          <span class="text-xs text-gray-500">Updated today</span>
-        </div>
-        <div class="space-y-3" id="latestResources"></div>
-      </div>
-
-      <!-- Trending -->
-      <div>
-        <h2 class="font-display text-xl sm:text-2xl font-bold text-gray-900 mb-5">🔥 Trending Now</h2>
-        <div class="bg-gradient-to-br from-brand-500 to-brand-700 rounded-2xl p-6 text-white mb-5">
-          <div class="text-xs font-semibold uppercase tracking-wider opacity-80 mb-2">Exam Alert</div>
-          <h3 class="font-display font-bold text-lg mb-2">Board Exams 2026</h3>
-          <p class="text-sm opacity-90 mb-4">Complete preparation kit with previous papers, sample papers and revision notes.</p>
-          <button onclick="navigateTo('classwise')" class="w-full py-2.5 bg-white text-brand-600 font-semibold rounded-lg text-sm hover:bg-gray-100 transition">Explore Resources</button>
-        </div>
-
-        <div class="space-y-3">
-          <div class="flex items-center gap-3 p-3 bg-white border border-gray-100 rounded-lg hover:border-brand-200 cursor-pointer">
-            <div class="font-display text-2xl font-bold text-brand-200">01</div>
-            <div class="flex-1 min-w-0">
-              <div class="text-sm font-semibold text-gray-900 truncate">Class 8 maths</div>
-              <div class="text-xs text-gray-500">2.3k downloads today</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-white border border-gray-100 rounded-lg hover:border-brand-200 cursor-pointer">
-            <div class="font-display text-2xl font-bold text-brand-200">02</div>
-            <div class="flex-1 min-w-0">
-              <div class="text-sm font-semibold text-gray-900 truncate">CBSE Sample Papers 2026</div>
-              <div class="text-xs text-gray-500">1.9k downloads today</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-white border border-gray-100 rounded-lg hover:border-brand-200 cursor-pointer">
-            <div class="font-display text-2xl font-bold text-brand-200">03</div>
-            <div class="flex-1 min-w-0">
-              <div class="text-sm font-semibold text-gray-900 truncate">English Grammar Master Guide</div>
-              <div class="text-xs text-gray-500">1.5k downloads today</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3 p-3 bg-white border border-gray-100 rounded-lg hover:border-brand-200 cursor-pointer">
-            <div class="font-display text-2xl font-bold text-brand-200">04</div>
-            <div class="flex-1 min-w-0">
-              <div class="text-sm font-semibold text-gray-900 truncate">Maths Formula Sheet</div>
-              <div class="text-xs text-gray-500">1.2k downloads today</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar Ad -->
-        <div class="ad-slot w-full h-[250px] rounded-lg mt-5"><span>Advertisement — 300 × 250</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Class Quick Access -->
-  <section class="bg-gray-50 py-12">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-8">
-        <div class="text-xs font-semibold text-brand-600 uppercase tracking-wider mb-1">Quick Access</div>
-        <h2 class="font-display text-2xl sm:text-3xl font-bold text-gray-900">Select Your Class</h2>
-        <p class="text-gray-600 text-sm mt-2">Jump directly to resources for your class</p>
-      </div>
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
-        <button onclick="selectClass(6)" class="py-3 bg-white border border-gray-200 rounded-lg text-sm font-semibold hover:bg-brand-500 hover:text-white hover:border-brand-500 transition">Class 6</button>
-        <button onclick="selectClass(7)" class="py-3 bg-white border border-gray-200 rounded-lg text-sm font-semibold hover:bg-brand-500 hover:text-white hover:border-brand-500 transition">Class 7</button>
-        <button onclick="selectClass(8)" class="py-3 bg-white border border-gray-200 rounded-lg text-sm font-semibold hover:bg-brand-500 hover:text-white hover:border-brand-500 transition">Class 8</button>
-        <button onclick="selectClass(9)" class="py-3 bg-white border border-gray-200 rounded-lg text-sm font-semibold hover:bg-brand-500 hover:text-white hover:border-brand-500 transition">Class 9</button>
-        <button onclick="selectClass(10)" class="py-3 bg-white border border-gray-200 rounded-lg text-sm font-semibold hover:bg-brand-500 hover:text-white hover:border-brand-500 transition">Class 10</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter -->
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <div class="bg-gradient-to-br from-brand-600 to-brand-800 rounded-3xl p-8 sm:p-12 text-center text-white relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-      <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-      <div class="relative">
-        <div class="text-3xl mb-3">📬</div>
-        <h2 class="font-display text-2xl sm:text-3xl font-bold mb-3">Get Study Tips in Your Inbox</h2>
-        <p class="text-white/80 text-sm sm:text-base mb-6 max-w-xl mx-auto">Weekly notes, exam updates, and free resources delivered every Monday. Join 50,000+ subscribers.</p>
-        <form onsubmit="subscribeNewsletter(event)" class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
-          <input type="email" id="newsletterEmail" required placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50">
-          <button type="submit" class="px-6 py-3 bg-success-500 hover:bg-success-600 font-semibold rounded-lg transition">Subscribe</button>
-        </form>
-        <p id="newsletterMsg" class="text-xs text-success-200 mt-3 hidden">✓ Thanks for subscribing! Check your inbox.</p>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-<!-- ============== CATEGORIES PAGE ============== -->
-<div id="page-categories" class="page">
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900">Categories</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">All Categories</h1>
-    <p class="text-gray-600 mb-8">Browse resources organized by category</p>
-
-    <div class="ad-slot w-full h-24 rounded-lg mb-8"><span>Advertisement — 728 × 90</span></div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="categoriesGrid"></div>
-  </div>
-</div>
-
-<!-- ============== CLASS-WISE PAGE ============== -->
-<div id="page-classwise" class="page">
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900">Class-wise Resources</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Class-wise Resources</h1>
-    <p class="text-gray-600 mb-6">Select your class to explore notes, worksheets and more</p>
-
-    <div class="flex flex-wrap gap-2 mb-6" id="classFilters"></div>
-
-    <div id="classResources" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-  </div>
-</div>
-
-<!-- ============== SUBJECTS PAGE ============== -->
-<div id="page-subjects" class="page">
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900">Subject-wise Resources</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Subject-wise Resources</h1>
-    <p class="text-gray-600 mb-6">Find resources organized by subject</p>
-
-    <div class="flex flex-wrap gap-2 mb-6" id="subjectFilters"></div>
-
-    <div class="ad-slot w-full h-24 rounded-lg mb-6"><span>Advertisement — 728 × 90</span></div>
-
-    <div id="subjectResources" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-  </div>
-</div>
-
-<!-- ============== NOTES PAGE ============== -->
-<div id="page-notes" class="page">
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900"> Previous Year Question</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">📝  Previous Year Question</h1>
-    <p class="text-gray-600 mb-6">Download Previous Year Question in PDF format</p>
-
-    <div class="flex flex-wrap gap-2 mb-4">
-      <button class="chip active px-4 py-1.5 bg-brand-500 text-white rounded-full text-sm font-medium" onclick="filterNotes('all', this)">All</button>
-      <button class="chip px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium" onclick="filterNotes('Mathematics', this)">Mathematics</button>
-      <button class="chip px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium" onclick="filterNotes('Science', this)">Science</button>
-      <button class="chip px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium" onclick="filterNotes('English', this)">English</button>
-      <button class="chip px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium" onclick="filterNotes('Social Science', this)">Social Science</button>
-    </div>
-
-    <div class="ad-slot w-full h-24 rounded-lg mb-6"><span>Advertisement — 728 × 90</span></div>
-
-    <div id="notesList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-  </div>
-</div>
-
-<!-- ============== WORKSHEETS PAGE ============== -->
-<div id="page-worksheets" class="page">
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900">Worksheets</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">📋Worksheets</h1>
-    <p class="text-gray-600 mb-6">Printable worksheets with answer keys</p>
-
-    <div class="flex flex-wrap gap-2 mb-4">
-      <button class="chip active px-4 py-1.5 bg-brand-500 text-white rounded-full text-sm font-medium" onclick="filterWorksheets('all', this)">All</button>
-      <button class="chip px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium" onclick="filterWorksheets('Middle', this)">Middle (6-8)</button>
-      <button class="chip px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium" onclick="filterWorksheets('Secondary', this)">Secondary (9-10)</button>
-      
-    </div>
-
-    <div class="ad-slot w-full h-24 rounded-lg mb-6"><span>Advertisement — 728 × 90</span></div>
-
-    <div id="worksheetsList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5"></div>
-  </div>
-</div>
-
-<!-- ============== MCQ PAGE ============== -->
-<div id="page-mcq" class="page">
-  <div class="max-w-4xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900">MCQ Practice Tests</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">✅ MCQ Practice Tests</h1>
-    <p class="text-gray-600 mb-6">Test your knowledge with our interactive quizzes</p>
-
-    <!-- Quiz Setup -->
-    <div id="quizSetup" class="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8">
-      <h2 class="font-display text-xl font-bold text-gray-900 mb-5">Start a New Test</h2>
-
-      <div class="mb-5">
-        <label class="block text-sm font-semibold text-gray-700 mb-2">Select Subject</label>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          <button onclick="selectQuizSubject('Mathematics', this)" class="quiz-subject px-4 py-2.5 border-2 border-brand-500 bg-brand-50 text-brand-700 rounded-lg text-sm font-medium">Mathematics</button>
-          <button onclick="selectQuizSubject('Science', this)" class="quiz-subject px-4 py-2.5 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-brand-300">Science</button>
-          <button onclick="selectQuizSubject('English', this)" class="quiz-subject px-4 py-2.5 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-brand-300">English</button>
-          <button onclick="selectQuizSubject('Social Science', this)" class="quiz-subject px-4 py-2.5 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-brand-300">Social Science</button>
-          <button onclick="selectQuizSubject('Computer', this)" class="quiz-subject px-4 py-2.5 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-brand-300">Computer</button>
-          <button onclick="selectQuizSubject('GK', this)" class="quiz-subject px-4 py-2.5 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-brand-300">General Knowledge</button>
-        </div>
-      </div>
-
-      <div class="mb-5">
-        <label class="block text-sm font-semibold text-gray-700 mb-2">Number of Questions</label>
-        <div class="flex gap-2">
-          <button onclick="selectQuizCount(5, this)" class="quiz-count px-4 py-2 border-2 border-brand-500 bg-brand-50 text-brand-700 rounded-lg text-sm font-medium">5 Questions</button>
-          <button onclick="selectQuizCount(10, this)" class="quiz-count px-4 py-2 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-brand-300">10 Questions</button>
-          <button onclick="selectQuizCount(20, this)" class="quiz-count px-4 py-2 border-2 border-gray-200 text-gray-700 rounded-lg text-sm font-medium hover:border-brand-300">20 Questions</button>
-        </div>
-      </div>
-
-      <button onclick="startQuiz()" class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-lg transition">Start Test →</button>
-    </div>
-
-    <!-- Quiz Active -->
-    <div id="quizActive" class="hidden">
-      <div class="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8">
-        <div class="flex items-center justify-between mb-5 pb-4 border-b border-gray-100">
-          <div>
-            <div class="text-xs text-gray-500">Question <span id="qCurrent">1</span> of <span id="qTotal">5</span></div>
-            <div class="font-display font-bold text-gray-900" id="qSubject">Mathematics</div>
-          </div>
-          <div class="text-right">
-            <div class="text-xs text-gray-500">Score</div>
-            <div class="font-display font-bold text-brand-600" id="qScore">0</div>
-          </div>
-        </div>
-
-        <div class="w-full bg-gray-100 rounded-full h-1.5 mb-6">
-          <div id="qProgress" class="bg-brand-500 h-1.5 rounded-full transition-all" style="width: 20%"></div>
-        </div>
-
-        <h3 class="font-display text-lg font-semibold text-gray-900 mb-5" id="qText">Question text here?</h3>
-
-        <div id="qOptions" class="space-y-2 mb-6"></div>
-
-        <div class="flex gap-2">
-          <button onclick="submitAnswer()" id="submitBtn" class="flex-1 py-2.5 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-lg transition">Submit Answer</button>
-          <button onclick="nextQuestion()" id="nextBtn" class="flex-1 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold rounded-lg transition hidden">Next Question →</button>
-        </div>
+        <a href="#classes" class="text-sm font-semibold text-brand-600 hover:underline inline-flex items-center gap-1">
+          Choose your class
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
 
-    <!-- Quiz Result -->
-    <div id="quizResult" class="hidden">
-      <div class="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8 text-center">
-        <div class="text-5xl mb-3" id="resultEmoji">🎉</div>
-        <h2 class="font-display text-2xl font-bold text-gray-900 mb-2">Test Complete!</h2>
-        <p class="text-gray-600 mb-6">You scored <span id="finalScore" class="font-bold text-brand-600">0</span> out of <span id="finalTotal">5</span></p>
-        <div class="w-full bg-gray-100 rounded-full h-3 mb-6">
-          <div id="resultBar" class="bg-success-500 h-3 rounded-full transition-all" style="width: 0%"></div>
+    <!-- Right: Accordion -->
+    <div class="space-y-3 reveal">
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden" open>
+        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 font-semibold text-gray-900 text-sm sm:text-base hover:bg-gray-50 transition">
+          Are these resources based on the latest JAC syllabus?
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/>
+          </svg>
+        </summary>
+        <div class="faq-body px-5 sm:px-6 pb-6 text-sm text-gray-600 leading-relaxed">
+          Yes. All previous year papers, sample papers and notes are aligned with the latest
+          <strong class="text-gray-800">Jharkhand Academic Council (JAC)</strong> syllabus for Class 8 .
+          We update the library whenever the board releases a new syllabus or pattern.
         </div>
-        <p id="resultMessage" class="text-sm text-gray-600 mb-6">Great job! Keep practicing to improve further.</p>
-        <div class="flex flex-col sm:flex-row gap-2">
-          <button onclick="resetQuiz()" class="flex-1 py-2.5 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-lg transition">Take Another Test</button>
-          <button onclick="navigateTo('home')" class="flex-1 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold rounded-lg transition">Back to Home</button>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 font-semibold text-gray-900 text-sm sm:text-base hover:bg-gray-50 transition">
+          Is all the study material really free?
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/>
+          </svg>
+        </summary>
+        <div class="faq-body px-5 sm:px-6 pb-6 text-sm text-gray-600 leading-relaxed">
+          Yes — <strong class="text-gray-800">100% free</strong>. No login, no subscription and no hidden charges.
+          Every PDF on Jharhub can be downloaded directly to your phone or computer.
         </div>
-      </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 font-semibold text-gray-900 text-sm sm:text-base hover:bg-gray-50 transition">
+          How do I download a PDF?
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/>
+          </svg>
+        </summary>
+        <div class="faq-body px-5 sm:px-6 pb-6 text-sm text-gray-600 leading-relaxed">
+          Open your class page (<a href="class-8.html" class="text-brand-600 hover:underline">Class 8</a>,
+          find the resource you need and click <strong class="text-gray-800">Download</strong>.
+          The PDF opens in a new tab where you can save it. On mobile, tap the download icon in your browser.
+        </div>
+      </details>
+
+      <details class="group bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 font-semibold text-gray-900 text-sm sm:text-base hover:bg-gray-50 transition">
+          Which classes and subjects are covered?
+          <svg class="faq-icon w-5 h-5 shrink-0 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 9l6 6 6-6"/>
+          </svg>
+        </summary>
+        <div class="faq-body px-5 sm:px-6 pb-6 text-sm text-gray-600 leading-relaxed">
+          We cover <strong class="text-gray-800">JAC Class 8 </strong> — including
+          Mathematics, Science, Social Science, English, Hindi and Sanskrit.
+          Each class has its own dedicated page with papers, notes and solutions.
+        </div>
+      </details>
+
     </div>
   </div>
-</div>
+</section>
 
-<!-- ============== BLOG PAGE ============== -->
-<div id="page-blog" class="page">
-  <div class="max-w-7xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900">Blog</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">📰 EduHub Blog</h1>
-    <p class="text-gray-600 mb-8">Study tips, exam strategies, and learning resources</p>
-
-    <div class="ad-slot w-full h-24 rounded-lg mb-8"><span>Advertisement — 728 × 90</span></div>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="blogGrid"></div>
-  </div>
-</div>
-
-<!-- ============== CONTACT PAGE ============== -->
-<div id="page-contact" class="page">
-  <div class="max-w-5xl mx-auto px-4 py-8">
-    <nav class="text-xs text-gray-500 mb-4">
-      <a href="#" onclick="navigateTo('home'); return false;" class="hover:text-brand-600">Home</a><span class="breadcrumb-sep"></span><span class="text-gray-900">Contact</span>
-    </nav>
-    <h1 class="font-display text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Get in Touch</h1>
-    <p class="text-gray-600 mb-8">Have questions or suggestions? We'd love to hear from you.</p>
-
-    <div class="grid lg:grid-cols-2 gap-8">
-      <div class="bg-white border border-gray-100 rounded-2xl p-6 sm:p-8">
-        <h2 class="font-display text-xl font-bold text-gray-900 mb-5">Send us a message</h2>
-        <form onsubmit="submitContact(event)" class="space-y-4">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-              <input type="text" required class="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-500">
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-              <input type="email" required class="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-500">
-            </div>
-          </div>
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-            <select class="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-500">
-              <option>General Inquiry</option>
-              <option>Request a Resource</option>
-              <option>Report an Issue</option>
-              <option>Partnership</option>
-              <option>Feedback</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-            <textarea required rows="5" class="w-full px-4 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-brand-500"></textarea>
-          </div>
-          <button type="submit" class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-lg transition">Send Message</button>
-        </form>
-        <p id="contactMsg" class="text-sm text-success-600 mt-3 hidden">✓ Message sent! We'll get back to you within 24 hours.</p>
-      </div>
-
-      <div class="space-y-4">
-        <div class="bg-white border border-gray-100 rounded-2xl p-6">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 bg-brand-50 rounded-lg flex items-center justify-center text-xl">📧</div>
-            <div>
-              <h3 class="font-semibold text-gray-900 mb-1">Email Us</h3>
-              <p class="text-sm text-gray-600">support@eduhub.example</p>
-              <p class="text-xs text-gray-500 mt-1">We reply within 24 hours</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white border border-gray-100 rounded-2xl p-6">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 bg-success-50 rounded-lg flex items-center justify-center text-xl">💬</div>
-            <div>
-              <h3 class="font-semibold text-gray-900 mb-1">Community Forum</h3>
-              <p class="text-sm text-gray-600">Join 25,000+ students discussing studies</p>
-              <a href="#" class="text-sm text-brand-600 hover:underline mt-1 inline-block">Visit Forum →</a>
-            </div>
-          </div>
-        </div>
-        <div class="bg-white border border-gray-100 rounded-2xl p-6">
-          <div class="flex items-start gap-4">
-            <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center text-xl">📍</div>
-            <div>
-              <h3 class="font-semibold text-gray-900 mb-1">Office</h3>
-              <p class="text-sm text-gray-600">EduHub Education Pvt. Ltd.</p>
-              <p class="text-sm text-gray-600">Bengaluru, Karnataka, India</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="ad-slot w-full h-[250px] rounded-lg"><span>Advertisement — 300 × 250</span></div>
-      </div>
-    </div>
-  </div>
-</div>
 
 </main>
 
-<!-- Search Modal -->
-<div id="searchModal" class="fixed inset-0 z-50 hidden">
-  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeSearch()"></div>
-  <div class="relative max-w-2xl mx-auto mt-20 px-4">
-    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-      <div class="flex items-center gap-3 px-5 py-4 border-b border-gray-100">
-        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-        <input id="globalSearch" type="text" placeholder="Search notes, worksheets, MCQs..." class="flex-1 focus:outline-none text-sm" oninput="performGlobalSearch()" autofocus>
-        <button onclick="closeSearch()" class="text-gray-400 hover:text-gray-600">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-        </button>
-      </div>
-      <div id="searchResults" class="max-h-96 overflow-y-auto p-2">
-        <div class="text-center py-8 text-sm text-gray-500">Start typing to search resources...</div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 mt-12">
-  <div class="max-w-7xl mx-auto px-4 py-12">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-      <div>
-        <div class="flex items-center gap-1.5 mb-4">
-          <div class="w-9 h-9 bg-brand-500 rounded-lg flex items-center justify-center">
-           <img src="logo.png" alt="EduHub Logo" class="w-9 h-9 rounded-lg bg-white p-0.5">          </div>
+<!-- =====================================================
+     11. FOOTER
+===================================================== -->
+<footer class="bg-gray-900 text-gray-300">
+  <div class="max-w-7xl mx-auto container-x px-4 py-12 sm:py-14">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+
+      <!-- Brand -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <div class="flex items-center gap-2.5 mb-4">
+          <img src="logo.png" alt="Jharhub Logo" class="w-10 h-10 rounded-xl bg-white p-0.5">
           <div>
-            <div class="font-display font-bold text-lg text-white">EduHub</div>
-            <div class="text-[10px] text-gray-400">Learn Smart, Grow Faster</div>
+            <div class="font-display font-extrabold text-lg text-white">Jharhub</div>
+            <div class="text-[10px] text-gray-400">JAC Class 8 </div>
           </div>
         </div>
-        <p class="text-sm text-gray-400 mb-4">Free educational resources for school students. Quality education accessible to everyone.</p>
-        <div class="flex gap-2">
-          <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-brand-500 rounded-lg flex items-center justify-center transition">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
-          </a>
-          <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-brand-500 rounded-lg flex items-center justify-center transition">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-          </a>
-          <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-brand-500 rounded-lg flex items-center justify-center transition">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="#" class="w-8 h-8 bg-gray-800 hover:bg-brand-500 rounded-lg flex items-center justify-center transition">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-          </a>
-        </div>
+        <p class="text-sm text-gray-400 leading-relaxed max-w-xs">
+          Free, quality study resources for Jharkhand students.
+          Built to make board preparation simple and accessible to everyone.
+        </p>
       </div>
 
+      <!-- Classes -->
       <div>
-        <h4 class="font-semibold text-white mb-4">Resources</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" onclick="navigateTo('notes'); return false;" class="hover:text-white"> Previous Year Question</a></li>
-          <li><a href="#" onclick="navigateTo('worksheets'); return false;" class="hover:text-white">Worksheets</a></li>
-          <li><a href="#" onclick="navigateTo('mcq'); return false;" class="hover:text-white">MCQ Practice</a></li>
-          <li><a href="#" onclick="navigateTo('classwise'); return false;" class="hover:text-white">Class-wise</a></li>
-          <li><a href="#" onclick="navigateTo('subjects'); return false;" class="hover:text-white">Subject-wise</a></li>
+        <h4 class="font-semibold text-white text-sm mb-4">Explore Classes</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="class-8.html" class="text-gray-400 hover:text-white transition">Class 8 Resources</a></li>
         </ul>
       </div>
 
+      <!-- Resource types -->
       <div>
-        <h4 class="font-semibold text-white mb-2">Classes</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" onclick="selectClass(9); return false;" class="hover:text-white">Class 9</a></li>
-          <li><a href="#" onclick="selectClass(10); return false;" class="hover:text-white">Class 10</a></li>  
-          <li><a href="#" onclick="navigateTo('classwise'); return false;" class="hover:text-white">All Classes →</a></li>
+        <h4 class="font-semibold text-white text-sm mb-4">Study Material</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="class-8.html" class="text-gray-400 hover:text-white transition">Previous Year Papers</a></li>
+          <li><a href="class-8.html" class="text-gray-400 hover:text-white transition">2026 Sample Papers</a></li>
+          <li><a href="class-8.html" class="text-gray-400 hover:text-white transition">Practice Questions</a></li>
         </ul>
       </div>
 
+      <!-- Company -->
       <div>
-        <h4 class="font-semibold text-white mb-4">Company</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-white">About Us</a></li>
-          <li><a href="#" onclick="navigateTo('blog'); return false;" class="hover:text-white">Blog</a></li>
-          <li><a href="#" onclick="navigateTo('contact'); return false;" class="hover:text-white">Contact</a></li>
-          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-white">Terms of Service</a></li>
-          <li><a href="#" class="hover:text-white">Sitemap</a></li>
+        <h4 class="font-semibold text-white text-sm mb-4">Quick Links</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+          <li><a href="#faq" class="text-gray-400 hover:text-white transition">FAQ / Help</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
         </ul>
       </div>
+
     </div>
 
-    <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-      <p class="text-xs text-gray-500">© 2026 EduHub. All rights reserved. Made with ❤️ for students.</p>
+    <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-xs text-gray-500 text-center sm:text-left">
+        © <span id="year">2026</span> Jharhub. All rights reserved. Made with ❤️ for Jharkhand students.
+      </p>
       <p class="text-xs text-gray-500">Learn Smart, Grow Faster.</p>
     </div>
+
   </div>
 </footer>
 
-<!-- Toast -->
-<div id="toast" class="fixed bottom-4 right-4 z-50 hidden bg-gray-900 text-white px-5 py-3 rounded-lg shadow-xl text-sm max-w-xs"></div>
 
+<!-- =====================================================
+     JAVASCRIPT — sirf menu + scroll animation
+===================================================== -->
 <script>
-// ============== DATA ==============
-const categories = [
-  { icon: '🔢', name: 'Mathematics', count: 1240, desc: 'Algebra, Geometry, Trigonometry, Calculus' },
-  { icon: '🔬', name: 'Science', count: 1580, desc: 'Physics, Chemistry, Biology' },
-  { icon: '📖', name: 'English', count: 980, desc: 'Grammar, Literature, Writing' },
-  { icon: '🌍', name: 'Social Science', count: 1120, desc: 'History, Geography, Civics, Economics' },
-  { icon: '💻', name: 'Computer', count: 420, desc: 'Programming, IT, Digital Literacy' },
-  { icon: '🎨', name: 'Hindi', count: 760, desc: 'Vyakaran, Sahitya, Rachna' },
-  { icon: '🕉️', name: 'Sanskrit', count: 120, desc: 'Mantra & Sanskrit  sloka ' },
- ];
+(function () {
+  'use strict';
 
-const subjects = ['Mathematics', 'Science', 'English', 'Social Science', 'Computer', 'Hindi', 'Sanskrit'];
+  /* ---------- Mobile Menu ---------- */
+  const menuBtn   = document.getElementById('menuBtn');
+  const mobileMenu= document.getElementById('mobileMenu');
+  const iconOpen  = document.getElementById('iconOpen');
+  const iconClose = document.getElementById('iconClose');
 
-const notes = [
-
-{
-    title: 'jac-class-8-social-science-2025',
-    subject: 'Social Science',
-    class: 8,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    date: '2026-10-07',
-    pdf: 'pdfs/jac-class-8-social-science-2025.pdf'
-},
-
-{
-    title: 'jac-class-8-mathematics-2025',
-    subject: 'Mathematics',
-    class: 8,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    date: '2026-10-07',
-    pdf: 'pdfs/jac-class-8-mathematics-2025.pdf'
-},
-
-{
-    title: 'jac-class-8-science-2025',
-    subject: 'Science',
-    class: 8,
-    pages: 25,
-    size: '2.5 MB',
-    downloads: '0',
-    date: '2026-10-07',
-    pdf: 'pdfs/jac-class-8-science-2025.pdf'
-},
-
- {
-    title: 'Class 10 Previous Science Question Paper set 1',
-    subject: 'Science',
-    class: 10,
-    pages: 20,
-    size: '2.5 MB',
-    date: '2026-10-05',
-    downloads: '0',
-    pdf: 'pdfs/class 10 science previous year (2026) set 1.pdf'
-},
-  {
-    title: 'jac-class-8-hindi-2025',
-    subject: 'Hindi',
-    class: 8,
-    pages: 23,
-    size: '2.5 MB',
-    date: '2026-10-07',
-    downloads: '0',
-    pdf: 'pdfs/jac-class-8-hindi-2025.pdf' // ✅ NEW CODE (Points to your file)
-  },
-{
-    title: 'Class 10 Previous science Question Paper set 2',
-    subject: 'Science',
-    class: 10,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    date: '2026-10-05',
-    pdf: 'pdfs/class 10 science previous year (2026) set 2.pdf'   },
-{
-    title: 'Class 10 Previous Sanskrit Question Paper ',
-    subject: 'Sanskrit',
-    class: 10,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    date: '2026-10-05',
-    pdf: 'pdfs/Sanskrit.pdf'   }, 
-{
-    title: 'Class 10 Previous science Question Paper set 3',
-    subject: 'Science',
-    class: 10,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    date: '2026-10-05',
-    pdf: 'pdfs/class 10 science previous year (2026) set 3.pdf'
-  },
-
-{
-    title: 'Class 10 Previous science Question Paper set 5',
-    subject: 'Science',
-    class: 10,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    date: '2026-10-01',
-    pdf: 'pdfs/class 10 science previous year (2026) set 5.pdf' 
-  },
-{
-    title: 'CBSE Class 10 PYQs Past 10 Years Solved Papers All Subject',
-    subject: 'All',
-    class: 10,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    pdf: 'pdfs/CBSE Class 10 PYQs Past 10 Years Solved Papers All Subject.pdf'   },
-
-];
-const worksheets = [
-{
-    title: 'Class VIII MathematicsQuestion Paper',
-    subject: 'Mathematics',
-    class: 8,
-    pages: 3,
-    size: '1 MB',
-    downloads: '0',
-    pdf: 'pdfs/Class VIII MathematicsQuestion Paper.pdf'   },
-
-  {
-    title: 'Science Class 8 All Chapter Shorts Notes',
-    subject: 'Science',
-    class: 8,
-    pages: 30,
-    size: '2.5 MB',
-    downloads: '0',
-    pdf: 'pdfs/Science Class 8 All Chapter Shorts Notes.pdf'   },
-
-{
-    title: 'Class 10 Dust of Snow Solution and Notes',
-    subject: 'English',
-    class: 10,
-    pages: 20,
-    size: '2.5 MB',
-    downloads: '0',
-    pdf: 'pdfs/dust of snow class 10.pdf' },
-{ title: 'Carbon chapter all chemical equation',
-    subject: 'Science',
-    class: 10,
-    pages: 3,
-    size: '2.5 MB',
-    downloads: '0',
-    pdf: 'pdfs/carbon.pdf'  },
-{ title: 'Trigonometry  question',
-    subject: 'Mathematics',
-    class: 10,
-    pages: 3,
-    size: '2.5 MB',
-    downloads: '0',
-    pdf: 'pdfs/Trigonometry  question.pdf'  },
-{ title: 'SAMPLE QUESTION PAPER English class 10',
-    subject: 'English',
-    class: 10,
-    pages: 3,
-    size: '2.5 MB',
-    downloads: '0',
-    pdf: 'pdfs/SAMPLE QUESTION PAPER English class 10.pdf'  },
-
-{ title: 'SAMPLE QUESTION PAPER Maths class 10',
-    subject: 'Mathematics',
-    class: 10,
-    pages: 11,
-    size: '2.5 MB',
-    downloads: '0',
-    pdf: 'pdfs/SAMPLE QUESTION PAPER Maths class 10.pdf'  },
-  ];
-
-const blogPosts = [
-  { title: '10 Effective Study Techniques for Board Exams 2026', category: 'Study Tips', date: 'Oct 1, 2026', readTime: '5 min read', emoji: '📚' },
-  { title: 'How to Manage Time During Exams: A Complete Guide', category: 'Exam Strategy', date: 'Sep 28, 2026', readTime: '7 min read', emoji: '⏰' },
-  { title: 'Best Apps for Students in 2026', category: 'Resources', date: 'Sep 25, 2026', readTime: '6 min read', emoji: '📱' },
-  { title: 'CBSE Class 10 Board Exam Pattern 2026 Explained', category: 'Exam Updates', date: 'Sep 22, 2026', readTime: '8 min read', emoji: '📝' },
-  { title: 'How to Score 95%+ in Mathematics', category: 'Subject Tips', date: 'Sep 18, 2026', readTime: '6 min read', emoji: '🔢' },
-  { title: 'The Importance of Revision in Exam Preparation', category: 'Study Tips', date: 'Sep 15, 2026', readTime: '4 min read', emoji: '🔄' }
-];
-
-const quizQuestions = {
-  Mathematics: [
-    { q: 'What is the value of π (pi) approximately?', options: ['3.14', '2.71', '1.61', '4.20'], correct: 0 },
-    { q: 'If x + 5 = 12, what is x?', options: ['5', '6', '7', '8'], correct: 2 },
-    { q: 'What is the square root of 144?', options: ['10', '11', '12', '14'], correct: 2 },
-    { q: 'What is 15% of 200?', options: ['20', '25', '30', '35'], correct: 2 },
-    { q: 'A triangle has angles 60°, 70°. What is the third angle?', options: ['40°', '50°', '60°', '70°'], correct: 1 },
-    { q: 'What is 8 × 7?', options: ['54', '56', '58', '62'], correct: 1 },
-    { q: 'Simplify: 2x + 3x', options: ['5x', '6x', '5x²', '23x'], correct: 0 },
-    { q: 'What is the area of a rectangle with length 8 and width 5?', options: ['13', '26', '40', '45'], correct: 2 },
-    { q: 'What is 2³?', options: ['6', '8', '9', '16'], correct: 1 },
-    { q: 'If a = 3 and b = 4, what is a² + b²?', options: ['7', '12', '25', '49'], correct: 2 },
-    { q: 'What is the LCM of 4 and 6?', options: ['10', '12', '24', '2'], correct: 1 },
-    { q: 'What is 100 ÷ 4?', options: ['20', '25', '30', '40'], correct: 1 },
-    { q: 'Convert 0.75 to a fraction:', options: ['1/2', '3/4', '2/3', '4/5'], correct: 1 },
-    { q: 'What is the perimeter of a square with side 9?', options: ['18', '27', '36', '81'], correct: 2 },
-    { q: 'Solve: 5x = 35', options: ['5', '6', '7', '8'], correct: 2 },
-    { q: 'What is 25% of 80?', options: ['15', '20', '25', '30'], correct: 1 },
-    { q: 'How many sides does a hexagon have?', options: ['5', '6', '7', '8'], correct: 1 },
-    { q: 'What is 9²?', options: ['18', '72', '81', '99'], correct: 2 },
-    { q: 'What is the HCF of 12 and 18?', options: ['2', '3', '6', '9'], correct: 2 },
-    { q: 'What is 3/4 + 1/4?', options: ['1', '1/2', '4/4', 'Both A and C'], correct: 3 }
-  ],
-  Science: [
-    { q: 'What is the chemical formula of water?', options: ['H2O', 'CO2', 'O2', 'NaCl'], correct: 0 },
-    { q: 'Which planet is known as the Red Planet?', options: ['Venus', 'Mars', 'Jupiter', 'Saturn'], correct: 1 },
-    { q: 'What is the unit of force?', options: ['Joule', 'Newton', 'Watt', 'Pascal'], correct: 1 },
-    { q: 'Which gas do plants absorb from the atmosphere?', options: ['Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Hydrogen'], correct: 2 },
-    { q: 'What is the speed of light?', options: ['3×10⁶ m/s', '3×10⁸ m/s', '3×10¹⁰ m/s', '3×10⁵ m/s'], correct: 1 },
-    { q: 'Which organ pumps blood in the human body?', options: ['Liver', 'Heart', 'Kidney', 'Lungs'], correct: 1 },
-    { q: 'What is the pH of pure water?', options: ['5', '6', '7', '8'], correct: 2 },
-    { q: 'Which is the largest organ in the human body?', options: ['Heart', 'Liver', 'Skin', 'Brain'], correct: 2 },
-    { q: 'What is the chemical symbol for Gold?', options: ['Go', 'Gd', 'Au', 'Ag'], correct: 2 },
-    { q: 'Which vitamin is produced by sunlight?', options: ['Vitamin A', 'Vitamin B', 'Vitamin C', 'Vitamin D'], correct: 3 },
-    { q: 'What is the boiling point of water?', options: ['90°C', '100°C', '110°C', '120°C'], correct: 1 },
-    { q: 'Which blood cells fight infections?', options: ['RBC', 'WBC', 'Platelets', 'Plasma'], correct: 1 },
-    { q: 'What is the smallest unit of life?', options: ['Atom', 'Molecule', 'Cell', 'Tissue'], correct: 2 },
-    { q: 'Which force pulls objects toward Earth?', options: ['Magnetic', 'Friction', 'Gravity', 'Nuclear'], correct: 2 },
-    { q: 'What is the atomic number of Carbon?', options: ['4', '6', '8', '12'], correct: 1 },
-    { q: 'Which planet is closest to the Sun?', options: ['Venus', 'Earth', 'Mercury', 'Mars'], correct: 2 },
-    { q: 'What is the formula for density?', options: ['Mass/Volume', 'Volume/Mass', 'Mass×Volume', 'Mass+Volume'], correct: 0 },
-    { q: 'Which gas is essential for breathing?', options: ['Nitrogen', 'Oxygen', 'Carbon Dioxide', 'Hydrogen'], correct: 1 },
-    { q: 'What is the unit of electric current?', options: ['Volt', 'Ampere', 'Ohm', 'Watt'], correct: 1 },
-    { q: 'How many bones are in the adult human body?', options: ['186', '206', '226', '256'], correct: 1 }
-  ],
-  English: [
-    { q: 'Which is a noun?', options: ['Run', 'Beautiful', 'Happiness', 'Quickly'], correct: 2 },
-    { q: 'What is the past tense of "go"?', options: ['Goed', 'Went', 'Gone', 'Going'], correct: 1 },
-    { q: 'Identify the adjective: "The tall boy ran fast"', options: ['boy', 'tall', 'ran', 'fast'], correct: 1 },
-    { q: 'What is the plural of "child"?', options: ['Childs', 'Childes', 'Children', 'Childern'], correct: 2 },
-    { q: 'Which is a conjunction?', options: ['Quickly', 'And', 'Beautiful', 'Under'], correct: 1 },
-    { q: 'What is the synonym of "happy"?', options: ['Sad', 'Joyful', 'Angry', 'Tired'], correct: 1 },
-    { q: 'What is the antonym of "big"?', options: ['Large', 'Huge', 'Small', 'Tall'], correct: 2 },
-    { q: '"She sings beautifully." What is "beautifully"?', options: ['Noun', 'Verb', 'Adjective', 'Adverb'], correct: 3 },
-    { q: 'Which sentence is correct?', options: ['He go to school.', 'He goes to school.', 'He going to school.', 'He gone to school.'], correct: 1 },
-    { q: 'What is the comparative form of "good"?', options: ['Gooder', 'Better', 'Best', 'More good'], correct: 1 },
-    { q: 'Identify the pronoun: "She is my friend."', options: ['is', 'my', 'She', 'friend'], correct: 2 },
-    { q: 'What punctuation ends a question?', options: ['.', '!', '?', ','], correct: 2 },
-    { q: 'Which is an article?', options: ['The', 'And', 'Is', 'Run'], correct: 0 },
-    { q: 'What is the superlative of "tall"?', options: ['Taller', 'Tallest', 'Most tall', 'More tall'], correct: 1 },
-    { q: '"The dog barked loudly." What is the verb?', options: ['The', 'dog', 'barked', 'loudly'], correct: 2 },
-    { q: 'Which word is spelled correctly?', options: ['Recieve', 'Receive', 'Receev', 'Receeve'], correct: 1 },
-    { q: 'What type of sentence is "Close the door!"?', options: ['Declarative', 'Interrogative', 'Imperative', 'Exclamatory'], correct: 2 },
-    { q: 'Which is a preposition?', options: ['Run', 'Under', 'Happy', 'Quickly'], correct: 1 },
-    { q: 'What is the past participle of "eat"?', options: ['Ate', 'Eaten', 'Eating', 'Eats'], correct: 1 },
-    { q: 'Identify the subject: "The cat sleeps on the mat."', options: ['sleeps', 'on', 'The cat', 'mat'], correct: 2 }
-  ],
-  'Social Science': [
-    { q: 'Who was the first Prime Minister of India?', options: ['Mahatma Gandhi', 'Jawaharlal Nehru', 'Sardar Patel', 'Subhash Bose'], correct: 1 },
-    { q: 'Which is the longest river in India?', options: ['Yamuna', 'Godavari', 'Ganga', 'Brahmaputra'], correct: 2 },
-    { q: 'In which year did India gain independence?', options: ['1945', '1947', '1950', '1942'], correct: 1 },
-    { q: 'What is the capital of India?', options: ['Mumbai', 'Kolkata', 'New Delhi', 'Chennai'], correct: 2 },
-    { q: 'Who wrote the Indian National Anthem?', options: ['Bankim Chandra', 'Rabindranath Tagore', 'Mahatma Gandhi', 'Sarojini Naidu'], correct: 1 },
-    { q: 'Which is the largest continent?', options: ['Africa', 'Europe', 'Asia', 'North America'], correct: 2 },
-    { q: 'The French Revolution began in which year?', options: ['1776', '1789', '1804', '1815'], correct: 1 },
-    { q: 'Who is known as the Father of the Nation in India?', options: ['Nehru', 'Patel', 'Mahatma Gandhi', 'Ambedkar'], correct: 2 },
-    { q: 'Which is the smallest continent?', options: ['Europe', 'Australia', 'Antarctica', 'South America'], correct: 1 },
-    { q: 'The Indus Valley Civilization was located near which river?', options: ['Ganga', 'Yamuna', 'Indus', 'Narmada'], correct: 2 },
-    { q: 'Who discovered America?', options: ['Vasco da Gama', 'Columbus', 'Magellan', 'Cook'], correct: 1 },
-    { q: 'What is the currency of Japan?', options: ['Yuan', 'Won', 'Yen', 'Ringgit'], correct: 2 },
-    { q: 'Which Mughal emperor built the Taj Mahal?', options: ['Akbar', 'Shah Jahan', 'Aurangzeb', 'Babar'], correct: 1 },
-    { q: 'The Tropic of Cancer passes through how many Indian states?', options: ['6', '7', '8', '9'], correct: 2 },
-    { q: 'Who was the first President of India?', options: ['Rajendra Prasad', 'Radhakrishnan', 'Nehru', 'Patel'], correct: 0 },
-    { q: 'Which is the highest peak in the world?', options: ['K2', 'Kangchenjunga', 'Mount Everest', 'Lhotse'], correct: 2 },
-    { q: 'The Constitution of India came into effect on?', options: ['26 Jan 1950', '15 Aug 1947', '26 Nov 1949', '2 Oct 1950'], correct: 0 },
-    { q: 'Which is the largest ocean?', options: ['Atlantic', 'Indian', 'Arctic', 'Pacific'], correct: 3 },
-    { q: 'Who gave the slogan "Do or Die"?', options: ['Nehru', 'Bhagat Singh', 'Mahatma Gandhi', 'Subhash Bose'], correct: 2 },
-    { q: 'Which is the national animal of India?', options: ['Lion', 'Elephant', 'Tiger', 'Leopard'], correct: 2 }
-  ],
-  Computer: [
-    { q: 'What does CPU stand for?', options: ['Central Process Unit', 'Central Processing Unit', 'Computer Personal Unit', 'Central Program Utility'], correct: 1 },
-    { q: 'Which is an input device?', options: ['Monitor', 'Printer', 'Keyboard', 'Speaker'], correct: 2 },
-    { q: 'What does HTML stand for?', options: ['Hyper Text Markup Language', 'High Text Machine Language', 'Hyper Tool Multi Language', 'Home Tool Markup Language'], correct: 0 },
-    { q: 'Which is NOT a programming language?', options: ['Python', 'Java', 'HTML', 'C++'], correct: 2 },
-    { q: '1 KB equals how many bytes?', options: ['100', '1000', '1024', '2048'], correct: 2 },
-    { q: 'What is the full form of RAM?', options: ['Random Access Memory', 'Read Access Memory', 'Run Application Memory', 'Rapid Access Memory'], correct: 0 },
-    { q: 'Which company made Windows?', options: ['Apple', 'Microsoft', 'Google', 'IBM'], correct: 1 },
-    { q: 'What does URL stand for?', options: ['Uniform Resource Locator', 'Universal Resource Link', 'United Resource Locator', 'Uniform Reference Link'], correct: 0 },
-    { q: 'Which is an operating system?', options: ['Chrome', 'Windows', 'Word', 'Excel'], correct: 1 },
-    { q: 'Binary uses which digits?', options: ['0-9', '0-1', '1-10', '0-7'], correct: 1 },
-    { q: 'What is the brain of the computer?', options: ['RAM', 'Hard Disk', 'CPU', 'Monitor'], correct: 2 },
-    { q: 'Which key is used to copy?', options: ['Ctrl+V', 'Ctrl+X', 'Ctrl+C', 'Ctrl+Z'], correct: 2 },
-    { q: 'What does WWW stand for?', options: ['World Wide Web', 'World Web Wide', 'Wide World Web', 'Web World Wide'], correct: 0 },
-    { q: 'Which is a web browser?', options: ['Windows', 'Chrome', 'Word', 'Photoshop'], correct: 1 },
-    { q: 'What is the shortcut for paste?', options: ['Ctrl+C', 'Ctrl+V', 'Ctrl+X', 'Ctrl+P'], correct: 1 },
-    { q: 'Python is a type of?', options: ['Hardware', 'Operating System', 'Programming Language', 'Browser'], correct: 2 },
-    { q: 'What is the full form of PDF?', options: ['Portable Document Format', 'Print Document File', 'Personal Data Format', 'Portable Data File'], correct: 0 },
-    { q: 'Which stores data permanently?', options: ['RAM', 'Cache', 'Hard Disk', 'Register'], correct: 2 },
-    { q: 'What is the full form of USB?', options: ['Universal Serial Bus', 'United Serial Bus', 'Universal System Bus', 'Uniform Serial Bus'], correct: 0 },
-    { q: 'Which is NOT an output device?', options: ['Monitor', 'Printer', 'Mouse', 'Speaker'], correct: 2 }
-  ],
-  GK: [
-    { q: 'How many continents are there?', options: ['5', '6', '7', '8'], correct: 2 },
-    { q: 'Which is the national bird of India?', options: ['Sparrow', 'Peacock', 'Parrot', 'Pigeon'], correct: 1 },
-    { q: 'How many colors are in the Indian flag?', options: ['2', '3', '4', '5'], correct: 1 },
-    { q: 'Which is the largest mammal?', options: ['Elephant', 'Blue Whale', 'Giraffe', 'Rhino'], correct: 1 },
-    { q: 'How many days in a leap year?', options: ['364', '365', '366', '367'], correct: 2 },
-    { q: 'Which is the fastest land animal?', options: ['Lion', 'Cheetah', 'Horse', 'Tiger'], correct: 1 },
-    { q: 'How many states in India (2026)?', options: ['28', '29', '30', '31'], correct: 0 },
-    { q: 'Who invented the telephone?', options: ['Edison', 'Bell', 'Tesla', 'Newton'], correct: 1 },
-    { q: 'Which is the hardest natural substance?', options: ['Gold', 'Iron', 'Diamond', 'Platinum'], correct: 2 },
-    { q: 'How many players in a cricket team?', options: ['9', '10', '11', '12'], correct: 2 },
-    { q: 'Which is the national flower of India?', options: ['Rose', 'Lotus', 'Sunflower', 'Lily'], correct: 1 },
-    { q: 'How many bones in a newborn baby?', options: ['206', '270', '300', '350'], correct: 2 },
-    { q: 'Which is the largest desert?', options: ['Sahara', 'Gobi', 'Antarctic', 'Arabian'], correct: 2 },
-    { q: 'How many teeth does an adult human have?', options: ['28', '30', '32', '34'], correct: 2 },
-    { q: 'Which planet has rings?', options: ['Mars', 'Jupiter', 'Saturn', 'Venus'], correct: 2 },
-    { q: 'Who painted the Mona Lisa?', options: ['Picasso', 'Da Vinci', 'Van Gogh', 'Michelangelo'], correct: 1 },
-    { q: 'How many sides does a pentagon have?', options: ['4', '5', '6', '7'], correct: 1 },
-    { q: 'Which is the smallest country?', options: ['Monaco', 'Vatican City', 'Nauru', 'Maldives'], correct: 1 },
-    { q: 'How many colors in a rainbow?', options: ['5', '6', '7', '8'], correct: 2 },
-    { q: 'What is the currency of UK?', options: ['Euro', 'Dollar', 'Pound', 'Franc'], correct: 2 }
-  ]
-};
-
-// ============== NAVIGATION ==============
-function navigateTo(page) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + page).classList.add('active');
-  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-  document.querySelectorAll(`.nav-link[data-page="${page}"]`).forEach(l => l.classList.add('active'));
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  document.getElementById('mobileMenu').classList.add('hidden');
-  
-  // Initialize game board when navigating to game page
-  if (page === 'game') {
-    setTimeout(initGame, 50);
+  function setMenu(open) {
+    mobileMenu.classList.toggle('hidden', !open);
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   }
-}
-function toggleMobileMenu() {
-  const menu = document.getElementById('mobileMenu');
-  const iconOpen = document.getElementById('menuIconOpen');
-  const iconClose = document.getElementById('menuIconClose');
-  
-  menu.classList.toggle('hidden');
-  
-  if (menu.classList.contains('hidden')) {
-    iconOpen.classList.remove('hidden');
-    iconClose.classList.add('hidden');
+
+  menuBtn.addEventListener('click', function () {
+    setMenu(mobileMenu.classList.contains('hidden'));
+  });
+
+  // Link click par menu band
+  mobileMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () { setMenu(false); });
+  });
+
+  // Bahar click par band
+  document.addEventListener('click', function (e) {
+    if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      setMenu(false);
+    }
+  });
+
+  // Escape key par band
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') setMenu(false);
+  });
+
+  // Desktop par switch hone par reset
+  window.matchMedia('(min-width: 768px)').addEventListener('change', function (e) {
+    if (e.matches) setMenu(false);
+  });
+
+
+  /* ---------- Scroll Reveal ---------- */
+  const items = document.querySelectorAll('.reveal');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+    items.forEach(function (el) { observer.observe(el); });
   } else {
-    iconOpen.classList.add('hidden');
-    iconClose.classList.remove('hidden');
-  }
-}
-
-function closeMobileMenu() {
-  const menu = document.getElementById('mobileMenu');
-  const iconOpen = document.getElementById('menuIconOpen');
-  const iconClose = document.getElementById('menuIconClose');
-  
-  menu.classList.add('hidden');
-  iconOpen.classList.remove('hidden');
-  iconClose.classList.add('hidden');
-}
-// ============== RENDER FUNCTIONS ==============
-function renderLatestResources() {
-  const el = document.getElementById('latestResources');
-
-  // Notes aur Worksheets ko combine karo
-  const allResources = [
-    ...notes.map(n => ({...n, icon:'📘', type: 'Note'})),
-    ...worksheets.map(w => ({...w, icon:'📝', type: 'Worksheet'}))
-  ];
-
-  // Sabse naya (Newest) top par lane ke liye Date ke hisaab se sort karo
-  allResources.sort((a, b) => {
-    const dateA = new Date(a.date || '2020-01-01');
-    const dateB = new Date(b.date || '2020-01-01');
-    return dateB - dateA; // Newest date pehle aayega
-  });
-
-  // Top 5 latest resources lo
-  const latest = allResources.slice(0, 5);
-
-  el.innerHTML = latest.map(r => `
-    <div class="card-hover flex items-center gap-4 p-4 bg-white border border-gray-100 rounded-xl">
-      <div class="w-12 h-12 bg-brand-50 rounded-lg flex items-center justify-center text-2xl">
-        ${r.icon}
-      </div>
-      <div class="flex-1">
-        <h3 class="font-semibold text-sm">${r.title}</h3>
-        <p class="text-xs text-gray-500">
-          Class ${r.class} • ${r.subject} • <span class="text-brand-500 font-medium">${r.type}</span>
-        </p>
-      </div>
-      <button onclick="downloadPDF('${r.pdf}')" class="px-3 py-2 bg-brand-500 hover:bg-brand-600 text-white rounded-lg text-xs font-semibold transition">
-        Open
-      </button>
-    </div>
-  `).join('');
-}
-function renderCategories() {
-  const el = document.getElementById('categoriesGrid');
-  el.innerHTML = categories.map(c => `
-    <div class="card-hover bg-white border border-gray-100 rounded-xl p-6 cursor-pointer" onclick="navigateTo('subjects')">
-      <div class="text-4xl mb-3">${c.icon}</div>
-      <h3 class="font-display font-bold text-lg text-gray-900 mb-1">${c.name}</h3>
-      <p class="text-xs text-gray-500 mb-3">${c.desc}</p>
-      <div class="flex items-center justify-between">
-        <span class="text-sm font-semibold text-brand-600">${c.count} resources</span>
-        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-      </div>
-    </div>
-  `).join('');
-}
-
-function renderClassResources(classNum) {
-  const el = document.getElementById('classResources');
-
-  const filtered = worksheets.filter(
-    r => r.class === classNum
-  );
-
-  if (filtered.length === 0) {
-    el.innerHTML =
-    '<div class="col-span-full text-center py-12 text-gray-500">No resources found for this class.</div>';
-    return;
+    items.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
-  el.innerHTML = filtered.map(r =>
-    renderResourceCard({...r, type:'Worksheet'})
-  ).join('');
-}
 
-function renderClassFilters(activeClass = 10) {
-  const el = document.getElementById('classFilters');
-  el.innerHTML = [6,7,8,9,10].map(c => `
-    <button onclick="renderClassResources(${c}); updateClassFilter(${c})" class="class-chip chip ${c === activeClass ? 'active' : ''} px-4 py-1.5 ${c === activeClass ? 'bg-brand-500 text-white' : 'bg-gray-100 text-gray-700'} rounded-full text-sm font-medium">Class ${c}</button>
-  `).join('');
-}
+  /* ---------- Auto Copyright Year ---------- */
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-function updateClassFilter(c) {
-  document.querySelectorAll('.class-chip').forEach(el => {
-    el.classList.remove('active', 'bg-brand-500', 'text-white');
-    el.classList.add('bg-gray-100', 'text-gray-700');
-  });
-  event.target.classList.add('active', 'bg-brand-500', 'text-white');
-  event.target.classList.remove('bg-gray-100', 'text-gray-700');
-}
-
-function renderSubjectResources(subject) {
-  const el = document.getElementById('subjectResources');
-
-  const filtered = worksheets.filter(
-    r => r.subject === subject
-  );
-
-  if (filtered.length === 0) {
-    el.innerHTML =
-    '<div class="col-span-full text-center py-12 text-gray-500">No resources found.</div>';
-    return;
-  }
-
-  el.innerHTML = filtered.map(r =>
-    renderResourceCard({...r, type:'Worksheet'})
-  ).join('');
-}
-
-function renderSubjectFilters(activeSubject = 'Mathematics') {
-  const el = document.getElementById('subjectFilters');
-  el.innerHTML = subjects.slice(0, 8).map(s => `
-    <button onclick="renderSubjectResources('${s}'); updateSubjectFilter(this)" class="subject-chip chip ${s === activeSubject ? 'active' : ''} px-4 py-1.5 ${s === activeSubject ? 'bg-brand-500 text-white' : 'bg-gray-100 text-gray-700'} rounded-full text-sm font-medium">${s}</button>
-  `).join('');
-}
-
-function updateSubjectFilter(btn) {
-  document.querySelectorAll('.subject-chip').forEach(el => {
-    el.classList.remove('active', 'bg-brand-500', 'text-white');
-    el.classList.add('bg-gray-100', 'text-gray-700');
-  });
-  btn.classList.add('active', 'bg-brand-500', 'text-white');
-  btn.classList.remove('bg-gray-100', 'text-gray-700');
-}
-
-function renderResourceCard(r) {
-  const icon = r.type === 'Worksheet' ? '📝' : '📘';
-  const type = r.type || 'Note';
-  return `
-    <div class="card-hover bg-white border border-gray-100 rounded-xl p-5">
-      <div class="flex items-start justify-between mb-3">
-        <div class="w-11 h-11 bg-brand-50 rounded-lg flex items-center justify-center text-xl">${icon}</div>
-        <span class="badge bg-success-50 text-success-700">Free PDF</span>
-      </div>
-      <h3 class="font-semibold text-gray-900 mb-2 text-sm leading-snug">${r.title}</h3>
-      <div class="flex items-center gap-2 text-xs text-gray-500 mb-4">
-        ${r.class ? `<span class="badge bg-gray-100 text-gray-700">Class ${r.class}</span>` : ''}
-        <span>${r.subject}</span>
-      </div>
-      <div class="flex items-center justify-between pt-3 border-t border-gray-100">
-        <div class="text-xs text-gray-500">
-          <div>📄 ${r.pages} pages</div>
-          <div>⬇ ${r.downloads}</div>
-        </div>
-        <button onclick="downloadPDF('${r.pdf}')" class="px-3 py-1.5 bg-brand-500 hover:bg-brand-600 text-white text-xs font-semibold rounded-lg flex items-center gap-1">
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          Download
-        </button>
-      </div>
-    </div>
-  `;
-}
-
-function renderNotes(filter = 'all') {
-  const el = document.getElementById('notesList');
-  const filtered = filter === 'all' ? notes : notes.filter(n => n.subject === filter);
-  if (filtered.length === 0) {
-    el.innerHTML = '<div class="col-span-full text-center py-12 text-gray-500">No notes found for this subject.</div>';
-    return;
-  }
-  el.innerHTML = filtered.map(n => renderResourceCard({...n, type: 'Note'})).join('');
-}
-
-function filterNotes(subject, btn) {
-  document.querySelectorAll('#page-notes .chip').forEach(c => {
-    c.classList.remove('active', 'bg-brand-500', 'text-white');
-    c.classList.add('bg-gray-100', 'text-gray-700');
-  });
-  btn.classList.add('active', 'bg-brand-500', 'text-white');
-  btn.classList.remove('bg-gray-100', 'text-gray-700');
-  renderNotes(subject);
-}
-
-function renderWorksheets(filter = 'all') {
-  const el = document.getElementById('worksheetsList');
-  const filtered = filter === 'all' ? worksheets : worksheets.filter(w => w.level === filter);
-  if (filtered.length === 0) {
-    el.innerHTML = '<div class="col-span-full text-center py-12 text-gray-500">No worksheets found.</div>';
-    return;
-  }
-  el.innerHTML = filtered.map(w => renderResourceCard({...w, type: 'Worksheet'})).join('');
-}
-
-function filterWorksheets(level, btn) {
-  document.querySelectorAll('#page-worksheets .chip').forEach(c => {
-    c.classList.remove('active', 'bg-brand-500', 'text-white');
-    c.classList.add('bg-gray-100', 'text-gray-700');
-  });
-  btn.classList.add('active', 'bg-brand-500', 'text-white');
-  btn.classList.remove('bg-gray-100', 'text-gray-700');
-  renderWorksheets(level);
-}
-
-function renderBlog() {
-  const el = document.getElementById('blogGrid');
-  el.innerHTML = blogPosts.map(p => `
-    <article class="card-hover bg-white border border-gray-100 rounded-xl overflow-hidden cursor-pointer" onclick="showToast('Opening article...', '${p.title}')">
-      <div class="h-32 bg-gradient-to-br from-brand-100 to-success-100 flex items-center justify-center text-5xl">${p.emoji}</div>
-      <div class="p-5">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="badge bg-brand-50 text-brand-700">${p.category}</span>
-          <span class="text-xs text-gray-400">${p.readTime}</span>
-        </div>
-        <h3 class="font-display font-bold text-gray-900 mb-2 leading-snug">${p.title}</h3>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>${p.date}</span>
-          <span class="text-brand-600 font-medium">Read more →</span>
-        </div>
-      </div>
-    </article>
-  `).join('');
-}
-
-// ============== QUIZ ==============
-let quizState = { subject: 'Mathematics', count: 5, current: 0, score: 0, questions: [], answered: false };
-
-function selectQuizSubject(subject, btn) {
-  quizState.subject = subject;
-  document.querySelectorAll('.quiz-subject').forEach(b => {
-    b.classList.remove('border-brand-500', 'bg-brand-50', 'text-brand-700');
-    b.classList.add('border-gray-200', 'text-gray-700');
-  });
-  btn.classList.add('border-brand-500', 'bg-brand-50', 'text-brand-700');
-  btn.classList.remove('border-gray-200', 'text-gray-700');
-}
-
-function selectQuizCount(count, btn) {
-  quizState.count = count;
-  document.querySelectorAll('.quiz-count').forEach(b => {
-    b.classList.remove('border-brand-500', 'bg-brand-50', 'text-brand-700');
-    b.classList.add('border-gray-200', 'text-gray-700');
-  });
-  btn.classList.add('border-brand-500', 'bg-brand-50', 'text-brand-700');
-  btn.classList.remove('border-gray-200', 'text-gray-700');
-}
-
-function startQuiz() {
-  const pool = quizQuestions[quizState.subject] || quizQuestions.Mathematics;
-  quizState.questions = [...pool].sort(() => Math.random() - 0.5).slice(0, quizState.count);
-  quizState.current = 0;
-  quizState.score = 0;
-  quizState.answered = false;
-  document.getElementById('quizSetup').classList.add('hidden');
-  document.getElementById('quizActive').classList.remove('hidden');
-  document.getElementById('quizResult').classList.add('hidden');
-  document.getElementById('qSubject').textContent = quizState.subject;
-  document.getElementById('qTotal').textContent = quizState.questions.length;
-  renderQuestion();
-}
-
-function renderQuestion() {
-  const q = quizState.questions[quizState.current];
-  document.getElementById('qCurrent').textContent = quizState.current + 1;
-  document.getElementById('qScore').textContent = quizState.score;
-  document.getElementById('qText').textContent = q.q;
-  document.getElementById('qProgress').style.width = ((quizState.current + 1) / quizState.questions.length * 100) + '%';
-  document.getElementById('qOptions').innerHTML = q.options.map((opt, i) => `
-    <div onclick="selectOption(${i})" class="quiz-option p-3 border-2 border-gray-200 rounded-lg text-sm flex items-center gap-3">
-      <div class="w-6 h-6 border-2 border-gray-300 rounded-full flex items-center justify-center text-xs font-bold">${String.fromCharCode(65+i)}</div>
-      <span>${opt}</span>
-    </div>
-  `).join('');
-  document.getElementById('submitBtn').classList.remove('hidden');
-  document.getElementById('nextBtn').classList.add('hidden');
-  quizState.answered = false;
-  quizState.selectedOption = null;
-}
-
-function selectOption(idx) {
-  if (quizState.answered) return;
-  quizState.selectedOption = idx;
-  document.querySelectorAll('.quiz-option').forEach((el, i) => {
-    el.classList.remove('selected');
-    if (i === idx) el.classList.add('selected');
-  });
-}
-
-function submitAnswer() {
-  if (quizState.selectedOption === null) {
-    showToast('Please select an option', 'Choose an answer before submitting');
-    return;
-  }
-  quizState.answered = true;
-  const q = quizState.questions[quizState.current];
-  const options = document.querySelectorAll('.quiz-option');
-  options.forEach((el, i) => {
-    el.classList.remove('selected');
-    if (i === q.correct) el.classList.add('correct');
-    else if (i === quizState.selectedOption) el.classList.add('wrong');
-  });
-  if (quizState.selectedOption === q.correct) quizState.score++;
-  document.getElementById('qScore').textContent = quizState.score;
-  document.getElementById('submitBtn').classList.add('hidden');
-  document.getElementById('nextBtn').classList.remove('hidden');
-  document.getElementById('nextBtn').textContent = quizState.current === quizState.questions.length - 1 ? 'See Results →' : 'Next Question →';
-}
-
-function nextQuestion() {
-  if (quizState.current === quizState.questions.length - 1) {
-    showResults();
-    return;
-  }
-  quizState.current++;
-  renderQuestion();
-}
-
-function showResults() {
-  document.getElementById('quizActive').classList.add('hidden');
-  document.getElementById('quizResult').classList.remove('hidden');
-  const pct = (quizState.score / quizState.questions.length) * 100;
-  document.getElementById('finalScore').textContent = quizState.score;
-  document.getElementById('finalTotal').textContent = quizState.questions.length;
-  setTimeout(() => {
-    document.getElementById('resultBar').style.width = pct + '%';
-  }, 100);
-  let emoji = '🎉', msg = 'Outstanding! You aced it!';
-  if (pct < 40) { emoji = '📚'; msg = 'Keep practicing! You\'ll improve with time.'; }
-  else if (pct < 70) { emoji = '💪'; msg = 'Good effort! Review the topics and try again.'; }
-  else if (pct < 90) { emoji = '🌟'; msg = 'Great job! Almost perfect!'; }
-  document.getElementById('resultEmoji').textContent = emoji;
-  document.getElementById('resultMessage').textContent = msg;
-}
-
-function resetQuiz() {
-  document.getElementById('quizSetup').classList.remove('hidden');
-  document.getElementById('quizActive').classList.add('hidden');
-  document.getElementById('quizResult').classList.add('hidden');
-}
-
-// ============== SEARCH ==============
-function openSearch() {
-  document.getElementById('searchModal').classList.remove('hidden');
-  setTimeout(() => document.getElementById('globalSearch').focus(), 100);
-}
-
-function closeSearch() {
-  document.getElementById('searchModal').classList.add('hidden');
-  document.getElementById('globalSearch').value = '';
-  document.getElementById('searchResults').innerHTML = '<div class="text-center py-8 text-sm text-gray-500">Start typing to search resources...</div>';
-}
-
-function performGlobalSearch() {
-  const q = document.getElementById('globalSearch').value.toLowerCase().trim();
-  const results = document.getElementById('searchResults');
-  if (!q) {
-    results.innerHTML = '<div class="text-center py-8 text-sm text-gray-500">Start typing to search resources...</div>';
-    return;
-  }
-  const all = [
-    ...notes.map(n => ({...n, type: 'Note', page: 'notes'})),
-    ...worksheets.map(w => ({...w, type: 'Worksheet', page: 'worksheets'})),
-    ...blogPosts.map(b => ({...b, type: 'Article', page: 'blog'}))
-  ];
-  const matches = all.filter(r => r.title.toLowerCase().includes(q) || (r.subject && r.subject.toLowerCase().includes(q))).slice(0, 8);
-  if (matches.length === 0) {
-    results.innerHTML = '<div class="text-center py-8 text-sm text-gray-500">No results found. Try different keywords.</div>';
-    return;
-  }
-  results.innerHTML = matches.map(r => `
-    <button onclick="closeSearch(); navigateTo('${r.page}')" class="w-full text-left p-3 hover:bg-brand-50 rounded-lg flex items-center gap-3">
-      <div class="w-9 h-9 bg-brand-50 rounded-lg flex items-center justify-center text-lg">${r.type === 'Note' ? '📘' : r.type === 'Worksheet' ? '📝' : '📰'}</div>
-      <div class="flex-1 min-w-0">
-        <div class="text-sm font-medium text-gray-900 truncate">${r.title}</div>
-        <div class="text-xs text-gray-500">${r.type}${r.class ? ' • Class ' + r.class : ''}${r.subject ? ' • ' + r.subject : ''}</div>
-      </div>
-    </button>
-  `).join('');
-}
-
-function performHeroSearch() {
-  const q = document.getElementById('heroSearch').value.trim();
-  if (!q) return;
-  openSearch();
-  document.getElementById('globalSearch').value = q;
-  performGlobalSearch();
-}
-
-function quickSearch(term) {
-  document.getElementById('heroSearch').value = term;
-  performHeroSearch();
-}
-
-// ============== UTILITIES ==============
-function selectClass(c) {
-  navigateTo('classwise');
-  setTimeout(() => {
-    renderClassResources(c);
-    renderClassFilters(c);
-  }, 100);
-}
-
-function downloadPDF(pdfFile) {
-window.open(pdfFile, '_blank');
-  setTimeout(() => showToast('✓ Download started', 'Your PDF is being downloaded'), 800);
-}
-
-function subscribeNewsletter(e) {
-  e.preventDefault();
-  document.getElementById('newsletterMsg').classList.remove('hidden');
-  document.getElementById('newsletterEmail').value = '';
-  showToast('✓ Subscribed!', 'Check your inbox for a welcome email');
-  setTimeout(() => document.getElementById('newsletterMsg').classList.add('hidden'), 4000);
-}
-
-function submitContact(e) {
-  e.preventDefault();
-  document.getElementById('contactMsg').classList.remove('hidden');
-  e.target.reset();
-  showToast('✓ Message sent!', 'We\'ll reply within 24 hours');
-  setTimeout(() => document.getElementById('contactMsg').classList.add('hidden'), 4000);
-}
-
-function showToast(title, msg) {
-  const t = document.getElementById('toast');
-  t.innerHTML = `<div class="font-semibold">${title}</div><div class="text-xs opacity-80 mt-0.5">${msg}</div>`;
-  t.classList.remove('hidden');
-  t.classList.add('animate-slideIn');
-  clearTimeout(window._toastTimer);
-  window._toastTimer = setTimeout(() => t.classList.add('hidden'), 2500);
-}
-
-// Keyboard shortcut for search
-document.addEventListener('keydown', (e) => {
-  if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-    e.preventDefault();
-    openSearch();
-  }
-  if (e.key === 'Escape') closeSearch();
-});
-
-// ============== INIT ==============
-document.addEventListener('DOMContentLoaded', () => {
-  renderLatestResources();
-  renderCategories();
-  renderClassResources(10);
-  renderClassFilters(10);
-  renderSubjectResources('Mathematics');
-  renderSubjectFilters('Mathematics');
-  renderNotes();
-  renderWorksheets();
-  renderBlog();
-});
+})();
 </script>
 
 </body>
